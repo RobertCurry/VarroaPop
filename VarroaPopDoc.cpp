@@ -1268,7 +1268,7 @@ bool CVarroaPopDoc::LoadWeatherFile(CString WeatherFileName)
 //  changes to internal variables based on the name and the value contained in the line.  The function is called
 //  after the .vrp file is loaded.
 //
-//  Purists would not like the use of so many if statements because it requires evaluation of a lot of invalid
+//  Some would not like the use of so many if statements because it requires evaluation of a lot of invalid
 //  ifs until a valid if is found.  This seemed the most clear to me since it is only used once per execution of VP
 //  and because we are selecting on a string, we can't use a switch statement.  Also, it's pretty clear how to read and add.
 //
