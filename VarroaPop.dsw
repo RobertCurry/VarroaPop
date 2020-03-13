@@ -1,0 +1,33 @@
+Microsoft Developer Studio Workspace File, Format Version 6.00
+# WARNING: DO NOT EDIT OR DELETE THIS WORKSPACE FILE!
+
+###############################################################################
+
+Project: "VarroaPop"=".\VarroaPop.dsp" - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Global:
+
+Package=<5>
+{{{
+}}}
+
+Package=<3>
+{{{
+    {27395F85-0C0C-101B-A3C9-08002B2F49FB}
+    {3A2B370C-BA0A-11D1-B137-0000F8753F5D}
+    {8E27C92B-1264-101C-8A2F-040224009C02}
+    {92D71E93-25A8-11CF-A640-9986B64D9618}
+}}}
+
+###############################################################################
+

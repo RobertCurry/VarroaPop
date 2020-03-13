@@ -1,0 +1,96 @@
+{\rtf1\ansi\ansicpg1252\uc1 \deff0\deflang1033\deflangfe1033{\fonttbl{\f0\froman\fcharset0\fprq2{\*\panose 02020603050405020304}Times New Roman;}{\f1\fswiss\fcharset0\fprq2{\*\panose 020b0604020202020204}Arial;}{\f16\froman\fcharset238\fprq2 Times New Roman CE;}{\f17\froman\fcharset204\fprq2 Times New Roman Cyr;}{\f19\froman\fcharset161\fprq2 Times New Roman Greek;}{\f20\froman\fcharset162\fprq2 Times New Roman Tur;}{\f21\froman\fcharset186\fprq2 Times New Roman Baltic;}{\f22\fswiss\fcharset238\fprq2 Arial CE;}{\f23\fswiss\fcharset204\fprq2 Arial Cyr;}{\f25\fswiss\fcharset161\fprq2 Arial Greek;}{\f26\fswiss\fcharset162\fprq2 Arial Tur;}{\f27\fswiss\fcharset186\fprq2 Arial Baltic;}}{\colortbl;\red0\green0\blue0;\red0\green0\blue255;\red0\green255\blue255;\red0\green255\blue0;\red255\green0\blue255;\red255\green0\blue0;\red255\green255\blue0;\red255\green255\blue255;\red0\green0\blue128;\red0\green128\blue128;\red0\green128\blue0;\red128\green0\blue128;\red128\green0\blue0;\red128\green128\blue0;\red128\green128\blue128;\red192\green192\blue192;}{\stylesheet{\nowidctlpar\widctlpar\adjustright \fs20\cgrid \snext0 Normal;}{\s1\keepn\nowidctlpar\widctlpar\adjustright \f1\cgrid \sbasedon0 \snext0 heading 1;}{\s2\keepn\nowidctlpar\widctlpar\adjustright \b\f1\cgrid \sbasedon0 \snext0 heading 2;}{\s3\keepn\nowidctlpar\widctlpar\adjustright \b\f1\ul\cgrid \sbasedon0 \snext0 heading 3;}{\*\cs10 \additive Default Paragraph Font;}{\s15\nowidctlpar\widctlpar\adjustright \f1\cgrid \sbasedon0 \snext15 Body Text;}}{\*\listtable{\list\listtemplateid67698703\listsimple{\listlevel\levelnfc0\leveljc0\levelfollow0\levelstartat1\levelspace0\levelindent0{\leveltext\'02\'00.;}{\levelnumbers\'01;}\b0\fbias0 \fi-360\li360\jclisttab\tx360 }{\listname ;}\listid569923894}{\list\listtemplateid67698703\listsimple{\listlevel\levelnfc0\leveljc0\levelfollow0\levelstartat1\levelspace0\levelindent0{\leveltext\'02\'00.;}{\levelnumbers\'01;}\fbias0 \fi-360\li360\jclisttab\tx360 }{\listname ;}\listid596333784}{\list\listtemplateid2021817270{\listlevel\levelnfc0\leveljc0\levelfollow0\levelstartat2\levelspace0\levelindent0{\leveltext\'02\'00.;}{\levelnumbers\'01;}\fbias0 \fi-360\li360\jclisttab\tx360 }{\listlevel\levelnfc0\leveljc0\levelfollow0\levelstartat1\levellegal\levelspace0\levelindent0{\leveltext\'03\'00.\'01;}{\levelnumbers\'01\'03;}\fbias0 \fi-465\li465\jclisttab\tx465 }{\listlevel\levelnfc0\leveljc0\levelfollow0\levelstartat1\levellegal\levelspace0\levelindent0{\leveltext\'05\'00.\'01.\'02;}{\levelnumbers\'01\'03\'05;}\fbias0 \fi-720\li720\jclisttab\tx720 }{\listlevel\levelnfc0\leveljc0\levelfollow0\levelstartat1\levellegal\levelspace0\levelindent0{\leveltext\'07\'00.\'01.\'02.\'03;}{\levelnumbers\'01\'03\'05\'07;}\fbias0 \fi-1080\li1080\jclisttab\tx1080 }{\listlevel\levelnfc0\leveljc0\levelfollow0\levelstartat1\levellegal\levelspace0\levelindent0{\leveltext
+\'09\'00.\'01.\'02.\'03.\'04;}{\levelnumbers\'01\'03\'05\'07\'09;}\fbias0 \fi-1080\li1080\jclisttab\tx1080 }{\listlevel\levelnfc0\leveljc0\levelfollow0\levelstartat1\levellegal\levelspace0\levelindent0{\leveltext\'0b\'00.\'01.\'02.\'03.\'04.\'05;}{\levelnumbers\'01\'03\'05\'07\'09\'0b;}\fbias0 \fi-1440\li1440\jclisttab\tx1440 }{\listlevel\levelnfc0\leveljc0\levelfollow0\levelstartat1\levellegal\levelspace0\levelindent0{\leveltext\'0d\'00.\'01.\'02.\'03.\'04.\'05.\'06;}{\levelnumbers\'01\'03\'05\'07\'09\'0b\'0d;}\fbias0 \fi-1440\li1440\jclisttab\tx1440 }{\listlevel\levelnfc0\leveljc0\levelfollow0\levelstartat1\levellegal\levelspace0\levelindent0{\leveltext
+\'0f\'00.\'01.\'02.\'03.\'04.\'05.\'06.\'07;}{\levelnumbers\'01\'03\'05\'07\'09\'0b\'0d\'0f;}\fbias0 \fi-1800\li1800\jclisttab\tx1800 }{\listlevel\levelnfc0\leveljc0\levelfollow0\levelstartat1\levellegal\levelspace0\levelindent0{\leveltext\'11\'00.\'01.\'02.\'03.\'04.\'05.\'06.\'07.\'08;}{\levelnumbers\'01\'03\'05\'07\'09\'0b\'0d\'0f\'11;}\fbias0 \fi-1800\li1800\jclisttab\tx1800 }{\listname ;}\listid1134326008}}{\*\listoverridetable{\listoverride\listid596333784\listoverridecount0\ls1}{\listoverride\listid569923894\listoverridecount0\ls2}{\listoverride\listid1134326008\listoverridecount0\ls3}}{\info{\title VarroaPop – A Varroa Mite Population Model}{\author Bob}{\operator Bob}{\creatim\yr2000\mo3\dy23\hr6\min36}{\revtim\yr2000\mo3\dy23\hr6\min36}{\version2}{\edmins0}{\nofpages5}{\nofwords1184}{\nofchars6750}{\*\company Crystal River Corporation}{\nofcharsws8289}{\vern71}}\widowctrl\ftnbj\aenddoc\hyphcaps0\formshade\viewkind1\viewscale100\pgbrdrhead\pgbrdrfoot \fet0\sectd \linex0\endnhere\sectdefaultcl {\*\pnseclvl1\pnucrm\pnstart1\pnindent720\pnhang{\pntxta .}}{\*\pnseclvl2\pnucltr\pnstart1\pnindent720\pnhang{\pntxta .}}{\*\pnseclvl3\pndec\pnstart1\pnindent720\pnhang{\pntxta .}}{\*\pnseclvl4\pnlcltr\pnstart1\pnindent720\pnhang{\pntxta )}}{\*\pnseclvl5\pndec\pnstart1\pnindent720\pnhang{\pntxtb (}{\pntxta )}}{\*\pnseclvl6\pnlcltr\pnstart1\pnindent720\pnhang{\pntxtb (}{\pntxta )}}{\*\pnseclvl7\pnlcrm\pnstart1\pnindent720\pnhang{\pntxtb (}{\pntxta )}}{\*\pnseclvl8\pnlcltr\pnstart1\pnindent720\pnhang{\pntxtb (}{\pntxta )}}{\*\pnseclvl9\pnlcrm\pnstart1\pnindent720\pnhang{\pntxtb (}{\pntxta )}}\pard\plain \s1\qc\keepn\nowidctlpar\widctlpar\outlinelevel0\adjustright \f1\cgrid {\b\fs28 VarroaPop \endash  A Varroa Mite Population Model
+\par }\pard\plain \qc\nowidctlpar\widctlpar\adjustright \fs20\cgrid {\f1\fs24 
+\par }\pard \nowidctlpar\widctlpar\adjustright {\f1\fs24 VarroaPop is a honeybee population model that incorporates the effects of a colony\rquote s infestation by the varroa mite.  VarroaPop allows the user to evaluate the effects of a variety of initial conditions and weather on the population of a honeybee colony.  It also allows the user to simulate the effects of varroa migration into an existing colony.
+\par 
+\par 
+\par }\pard\plain \s2\keepn\nowidctlpar\widctlpar\outlinelevel1\adjustright \b\f1\cgrid {\ul Software Information
+\par }\pard\plain \nowidctlpar\widctlpar\adjustright \fs20\cgrid {\f1\fs24 
+\par {\pntext\pard\plain\b\f1\cgrid \hich\af1\dbch\af0\loch\f1 1.\tab}}\pard \fi-360\li360\nowidctlpar\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec\pnstart1\pnindent360\pnhang{\pntxta .}}\ls1\adjustright {\b\f1\fs24 System Requirements
+\par }\pard \nowidctlpar\widctlpar{\*\pn \pnlvlcont\ilvl0\ls0\pnrnot0\pndec }\adjustright {\f1\fs24 
+\par In order to use VarroaPop, you must have Microsoft Windows 95, WIndows NT 4.0 , or later versions installed on your computer.  The VarroaPop software will consume approximately 1 MB of memory on your hard drive.
+\par 
+\par {\pntext\pard\plain\b\f1\cgrid \hich\af1\dbch\af0\loch\f1 2.\tab}}\pard \fi-360\li360\nowidctlpar\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec\pnstart1\pnindent360\pnhang{\pntxta .}}\ls1\adjustright {\b\f1\fs24 VarroaPop Files
+\par }\pard \nowidctlpar\widctlpar{\*\pn \pnlvlcont\ilvl0\ls0\pnrnot0\pndec }\adjustright {\f1\fs24 
+\par After installing VarroaPop, you will have the following files in the installation directory (e.g. C:\\VarroaPop):
+\par 
+\par }{\b\f1\fs24 VarroaPop.exe}{\f1\fs24  \endash  the VarroaPop program
+\par }{\b\f1\fs24 Midwest5yr.wth}{\f1\fs24  \endash  a weather file containing five years of Midwestern US weather data
+\par }{\b\f1\fs24 Sthwest5yr.wth}{\f1\fs24  \endash  a weather file containing five years of Southwestern US weather data
+\par }{\b\f1\fs24 LG_HI.col}{\f1\fs24  \endash  an example colony file containing a set of initial conditions.
+\par }{\b\f1\fs24 Figure2.vrp}{\f1\fs24  \endash  a sample VarropPop session file.
+\par }{\b\f1\fs24 Readme.doc}{\f1\fs24  \endash  this file
+\par 
+\par {\pntext\pard\plain\b\f1\cgrid \hich\af1\dbch\af0\loch\f1 3.\tab}}\pard \fi-360\li360\nowidctlpar\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec\pnstart1\pnindent360\pnhang{\pntxta .}}\ls1\adjustright {\b\f1\fs24 Running the VarroaPop program
+\par }\pard \nowidctlpar\widctlpar\adjustright {\f1\fs24 
+\par As with any Windows program, you can run VarroaPop from the Start button or from Windows Explorer.  
+\par 
+\par To run from the Start button, press Start->Run and Browse to the folder containing VarroaPop.exe.  Select VarroaPop.exe in the Browser dialog box and press Open.  This will return you Run dialog box where you will press OK.  VarroaPop will start.
+\par 
+\par To run from Windows Explorer, start Windows Explorer (normally listed when you select Start->Programs).  Navigate to the folder containing VarroaPop.exe.  Double-click on VarroaPop.exe and VarroaPop will start.
+\par 
+\par Alternately, you can place a shortcut to VarroaPop on your desktop.  This can be done by first navigating to the VarroaPop program with Windows Explorer in the same way as described above.  If you drag the VarroaPop icon from the Explorer window and drop it on your desktop, Windows will create a shortcut for you.  From that point on, you can run VarroaPop by double-clicking the shortcut.
+\par 
+\par 
+\par }\pard\plain \s3\keepn\nowidctlpar\widctlpar\outlinelevel2\adjustright \b\f1\ul\cgrid {Using VarroaPop
+\par }\pard\plain \nowidctlpar\widctlpar\adjustright \fs20\cgrid {
+\par }{\b\f1\fs24 1.  Overview
+\par 
+\par }{\f1\fs24 The basic concept of VarroaPop is to take some initial conditions for a honeybee colony, combine that with some weather data, then step day-by-day over a specific simulation period and monitor the colony\rquote s population changes.  A key notion is the VarroaPop }{\i\f1\fs24 session}{\f1\fs24  which is comprised of the weather data and the colony initial conditions.
+\par 
+\par After the simulation has been run, VarroaPop generates two types of results information.  First, a graphical result is displayed on the screen.  This graphical result can simultaneously show the value of multiple user-selected parameters plotted over time.  The other result information consists of tabular data which is shown on the VarroaPop main window.  The tabular results can be saved to a file for later use and it can be printed.
+\par 
+\par As a comment on notation, when this document is referring to a menu selection, the notation \ldblquote File->Save->Results\rdblquote  should be taken to mean, press the \ldblquote File\rdblquote  menu selection, then press the \ldblquote Save\rdblquote  selection on the resulting menu, and finally, press the \ldblquote Results\rdblquote  selection on the next menu.
+\par \page 
+\par {\listtext\pard\plain\b\f1\cgrid \hich\af1\dbch\af0\loch\f1 2.\tab}}\pard \fi-360\li360\nowidctlpar\widctlpar\jclisttab\tx360\ls3\adjustright {\b\f1\fs24 Details
+\par }\pard \nowidctlpar\widctlpar\adjustright {\b\f1\fs24 
+\par {\listtext\pard\plain\b\f1\cgrid \hich\af1\dbch\af0\loch\f1 2.1\tab}}\pard \fi-465\li465\nowidctlpar\widctlpar\jclisttab\tx465\ls3\ilvl1\adjustright {\b\f1\fs24 Initial Screen
+\par }\pard \nowidctlpar\widctlpar\adjustright {\b\f1\fs24 
+\par }{\f1\fs24 When VarroaPop first starts, the iniital screen is displayed:
+\par 
+\par No session is loaded yet so no simulation can be performed.  The first step is to either create a simulation from scratch or load an existing simulation.  
+\par 
+\par {\listtext\pard\plain\b\f1\cgrid \hich\af1\dbch\af0\loch\f1 2.2\tab}}\pard \fi-465\li465\nowidctlpar\widctlpar\jclisttab\tx465\ls3\ilvl1\adjustright {\b\f1\fs24 Starting a VarroaPop Session
+\par }\pard \nowidctlpar\widctlpar\adjustright {\b\f1\fs24 
+\par }{\f1\fs24 The easiest thing to do is to load an existing simulation.  That can be done from the menu by selecting File->Open.  At that point, a file open dialog is displayed and you can select an existing VarroaPop session file.  The same result is also obtained by pressing the File Open button on the toolbar.
+\par 
+\par A new session can be created by selecting File->New.  This will display a blank Colony Initial Conditions screen which can be filled out as desired (more about that later).  Again, the same result can be obtained by pressing the New button on the toolbar.
+\par 
+\par {\listtext\pard\plain\b\f1\cgrid \hich\af1\dbch\af0\loch\f1 2.3\tab}}\pard \fi-465\li465\nowidctlpar\widctlpar\jclisttab\tx465\ls3\ilvl1\adjustright {\b\f1\fs24 Running a Simulation
+\par }\pard \nowidctlpar\widctlpar\adjustright {\b\f1\fs24 
+\par }\pard\plain \s15\nowidctlpar\widctlpar\adjustright \f1\cgrid {Once a session is loaded, the simulation start and stop dates on the right side of the screen become active and are initially set to the beginning and ending dates in the weather data.  You can change the simulation start and stop times to be any timespan of interest within the limits of the weather data dates.  Once you have selected the simulation dates of interest, pressing the Run button (found on the lower right side of the main screen) begins the simulation.  When the simulation is complete, the results are displayed graphically and in tabular form.  You may print and/or save the tabular results.
+\par }\pard\plain \nowidctlpar\widctlpar\adjustright \fs20\cgrid {\f1\fs24 
+\par The simulation may be re-run at any time by just pressing the Run button again.  Rather than getting the same results over and over, however, you will usually want to make some changes in your session between successive simulations.
+\par 
+\par {\listtext\pard\plain\b\f1\cgrid \hich\af1\dbch\af0\loch\f1 2.4\tab}}\pard \fi-465\li465\nowidctlpar\widctlpar\jclisttab\tx465\ls3\ilvl1\adjustright {\b\f1\fs24 Modifying the Session
+\par }\pard \nowidctlpar\widctlpar\adjustright {\b\f1\fs24 
+\par }\pard\plain \s15\nowidctlpar\widctlpar\adjustright \f1\cgrid {There are many variables you can modify before running a simulation.  These include initial conditions, weather data, graphical display parameters, and immigration profiles.  All these modifications are stored when you save the session.
+\par }\pard\plain \nowidctlpar\widctlpar\adjustright \fs20\cgrid {\f1\fs24 
+\par }\pard\plain \s2\keepn\nowidctlpar\widctlpar\outlinelevel1\adjustright \b\f1\cgrid {Modifying Initial Conditions and Weather Data
+\par }\pard\plain \nowidctlpar\widctlpar\adjustright \fs20\cgrid {
+\par }{\f1\fs24 Initial conditions and weather data are modified using the Model Parameters dialog box.  This display is obtained by selecting View->Model Parameters or by pressing the Model Parameters toggle button on the toolbar.  This button looks like a honeycomb.
+\par 
+\par The Colony Name field will be blank on a new session and will contain the name of the current colony data for an existing session.  Pressing the down arrow next to the Colony Name field will display all the existing colony files in the current folder.
+\par 
+\par You can enter initial conditions for Worker and Drone populations in each of the life stages.  You can also enter initial conditions for Varroa mite infestation percentages, mite reproductive rate and survivorship.  You can also set the forager lifespan as well as parameters relating to the amount of sperm in the queen\rquote s spermacetha and the maximum eggs layed per day.  In order for any changes made to take effect, you must press the Apply button.
+\par 
+\par You can also modify the weather data you are using by pressing the Weather tab.  This will display a field identifying the current weather file (blank if this is a new session).  Similar to the Colony Name field, pressing the down arrow next to the weather file name field will display all weather files in the folder.  You must press the Select button to actually choose a weather file.  
+\par 
+\par The weather files are text files that can be read by any application that can load text (WordPad, Write, MS Word, etc.)  If you need to actually change the data in a weather file, you can load the file into an application, edit it, and re-save it as a text file.
+\par 
+\par }\pard\plain \s2\keepn\nowidctlpar\widctlpar\outlinelevel1\adjustright \b\f1\cgrid {Modifying Parameters to Graph
+\par }\pard\plain \nowidctlpar\widctlpar\adjustright \fs20\cgrid {\f1\fs24 
+\par You can graphically display all important parameters resulting from the simulation.  In order to allow you to focus on just the data you want, a Graph Selection dialog is displayed by either selecting View->Plot Data Selection or by pressing the Plot Data Selection button on the toolbar. 
+\par 
+\par You can select as many of these parameters as you would like, however with more than four or five, the graph gets quite busy.  Also note that the Proportion of Infested Brood values will always be between 0 and 1 while parameters such as Colony Size can get very large.  Therefore, you won\rquote t see much interesting if you display Proportion parameters along with population counts. 
+\par 
+\par 
+\par }\pard\plain \s2\keepn\nowidctlpar\widctlpar\outlinelevel1\adjustright \b\f1\cgrid {Modifying Immigration Profiles
+\par }\pard\plain \nowidctlpar\widctlpar\adjustright \fs20\cgrid {\b\f1\fs24 
+\par }\pard\plain \s15\nowidctlpar\widctlpar\adjustright \f1\cgrid {You can enable or disable immigration by making the proper selection on the main screen.  To change or set up the immigration profiles, press the Setup button in the Immigration block on the main screen.  When you do this, the following Immigration Setup screen is displayed:
+\par }\pard\plain \nowidctlpar\widctlpar\adjustright \fs20\cgrid {\f1\fs24 
+\par This screen allows you to select the immigration distribution from six predefined distributions by clicking on the one desired.  You can enter how many mites will immigrate.  Finally, you can select the Immigration Start and End dates.  These dates must lie within the simulation timespan.  When you are finished, select OK.
+\par 
+\par 
+\par }}

@@ -1,0 +1,1618 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+// Generated Help ID header file
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "resource.hm"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (United States) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif\r\n"
+    "#include ""res\\VarroaPop.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#include ""afxprint.rc""       // printing/print preview resources\r\n"
+    "#endif\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "RES\\VarroaPop.ico"
+
+IDR_VARROATYPE          ICON                    "res\\VarroaPopDoc.ico"
+
+IDI_SIN                 ICON                    "res\\sin.ico"
+
+IDI_COS                 ICON                    "res\\cos.ico"
+
+IDI_TAN                 ICON                    "res\\tan.ico"
+
+IDI_POLY                ICON                    "res\\icon1.ico"
+
+IDI_EXP                 ICON                    "res\\ico00001.ico"
+
+IDI_LOG                 ICON                    "res\\log.ico"
+
+IDI_ICON1               ICON                    "res\\ico00002.ico"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP                  "res\\Toolbar.bmp"
+
+IDB_BITMAP2             BITMAP                  "Bee4.bmp"
+
+IDB_BITMAP3             BITMAP                  "varroapop1.bmp"
+
+IDB_COS                 BITMAP                  "cos.bmp"
+
+IDB_EXP                 BITMAP                  "exp.bmp"
+
+IDB_LOG                 BITMAP                  "log.bmp"
+
+IDB_POLY                BITMAP                  "poly.bmp"
+
+IDB_SIN                 BITMAP                  "sin.bmp"
+
+IDB_TAN                 BITMAP                  "tan.bmp"
+
+IDB_BITMAP7             BITMAP                  "Varroa.bmp"
+
+IDB_SPLASH              BITMAP                  "res\\bitmap8.bmp"
+
+IDB_COS1                BITMAP                  "COS1.bmp"
+
+IDB_TAN1                BITMAP                  "Tan1.bmp"
+
+IDB_EXP1                BITMAP                  "Exp1.bmp"
+
+IDB_LOG1                BITMAP                  "LOG1.bmp"
+
+IDB_POLY1               BITMAP                  "Poly1.bmp"
+
+IDB_SIN1                BITMAP                  "Sin1.bmp"
+
+IDB_BITMAP10            BITMAP                  "VarroaBanner.bmp"
+
+IDB_BITMAP9             BITMAP                  "res\\bitmap9.bmp"
+
+IDB_WEATHERTOOLBAR      BITMAP                  "res\\weathert.bmp"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR 19, 19
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_FILE_PRINT
+    BUTTON      ID_APP_ABOUT
+    SEPARATOR
+    BUTTON      ID_SHOW_PROPSHEET
+    BUTTON      ID_SELECT_GRAPH
+    SEPARATOR
+    BUTTON      ID_BUTTON_COLEXPAND
+    BUTTON      ID_BUTTON_COLREDUCE
+END
+
+IDB_WEATHERTOOLBAR TOOLBAR 16, 15
+BEGIN
+    BUTTON      ID_BUTTON32800
+    BUTTON      ID_BUTTON32801
+    BUTTON      ID_BUTTON32802
+    BUTTON      ID_BUTTON32806
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New",                        ID_FILE_NEW
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        POPUP "Save"
+        BEGIN
+            MENUITEM "Save &Session",               ID_FILE_SAVE_SESSION
+            MENUITEM "Save Simulation &Results",    ID_FILE_SAVE_RESULTS
+        END
+        MENUITEM "Save &As...",                 ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "&Print...\tCtrl+P",           ID_FILE_PRINT
+        MENUITEM "Print Pre&view",              ID_FILE_PRINT_PREVIEW
+        MENUITEM "P&rint Setup...",             ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+        MENUITEM "Weekly Data",                 ID_VIEW_DATA_FREQ
+        MENUITEM SEPARATOR
+        MENUITEM "Model &Parameters",           ID_VIEW_PARAMETERS
+        MENUITEM "Plot Data Selection",         ID_VIEW_PLOTDATA
+        MENUITEM "Drone Comb Removal",          ID_VIEW_COMBREMOVALDATE
+        MENUITEM "Show Warnings",               ID_VIEW_SHOWWARNINGS
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&Help Topics",                ID_HELP_FINDER, INACTIVE
+        MENUITEM SEPARATOR
+        MENUITEM "&About VarroaPop...",         ID_APP_ABOUT
+        MENUITEM "Report a Problem",            ID_HELP_REPORTAPROBLEM
+        MENUITEM "VarroaPop Help",              ID_HELP, INACTIVE
+    END
+END
+
+IDR_CHARTMENU MENU
+BEGIN
+    POPUP "&Send"
+    BEGIN
+        MENUITEM "To Printer",                  IDR_PRINTER
+        MENUITEM "To File",                     IDR_FILE
+    END
+END
+
+IDR_MENUWEATHER MENU
+BEGIN
+    POPUP "File"
+    BEGIN
+        MENUITEM "Open",                        ID_WEATHER_FILE_OPEN
+        MENUITEM "Save",                        ID_WEATHER_FILE_SAVE
+        MENUITEM "Save As",                     ID_WEATHER_FILE_SAVEAS
+        MENUITEM "Exit",                        ID_WEATHER_FILE_EXIT
+    END
+    POPUP "View"
+    BEGIN
+        MENUITEM "Zoom In\tCtrl+I",             ID_VIEW_ZOOMIN
+        MENUITEM "Zoom Out\tCtrl+O",            ID_VIEW_ZOOMOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS
+BEGIN
+    VK_F1,          ID_CONTEXT_HELP,        VIRTKEY, SHIFT, NOINVERT
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT, NOINVERT
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL, NOINVERT
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT, NOINVERT
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT, NOINVERT
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL, NOINVERT
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL, NOINVERT
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL, NOINVERT
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL, NOINVERT
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL, NOINVERT
+    VK_F1,          ID_HELP,                VIRTKEY, NOINVERT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY, NOINVERT
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT, NOINVERT
+    "I",            ID_VIEW_ZOOMIN,         VIRTKEY, CONTROL, NOINVERT
+    "O",            ID_VIEW_ZOOMOUT,        VIRTKEY, CONTROL, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 238, 131
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About VarroaPop"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    LTEXT           "",IDC_VERSIONBOX,41,9,178,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 1999 - 2019",IDC_STATIC,40,25,119,8
+    LTEXT           "Developer:",IDC_STATIC,40,41,40,8
+    LTEXT           "SW Engineer:   Robert Curry",IDC_STATIC,37,74,143,8
+    LTEXT           "This program was produced by the USDA-ARS Carl Hayden Bee Research Center \n2000 E. Allen Rd., \nTucson, AZ 85719",IDC_STATIC,37,87,147,31
+    LTEXT           "Dr. Gloria DeGrandi-Hoffman \nResearch Entomologist USDA-ARS",IDC_STATIC,85,41,99,31
+    ICON            IDR_VARROATYPE,IDC_STATIC,11,17,20,20
+    DEFPUSHBUTTON   "OK",IDOK,201,105,32,14,WS_GROUP
+END
+
+IDD_COLONY_DATA_FORM DIALOGEX 0, 0, 427, 197
+STYLE DS_SETFONT | WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "Colony Data"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    EDITTEXT        IDC_WORKER_EGGS,185,57,38,12,ES_CENTER | ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_DRONE_EGGS,233,57,38,12,ES_CENTER | ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_WORKER_LARVAE,185,72,38,12,ES_CENTER | ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_DRONE_LARVAE,233,72,38,12,ES_CENTER | ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_WORKER_BROOD,185,87,38,12,ES_CENTER | ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_DRONE_BROOD,233,87,38,12,ES_CENTER | ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_BROOD_WORKER_INFEST,283,87,40,12,ES_CENTER | ES_AUTOHSCROLL
+    EDITTEXT        IDC_BROOD_DRONE_INFEST,331,87,40,12,ES_CENTER | ES_AUTOHSCROLL
+    EDITTEXT        IDC_WORKER_ADULTS,185,102,38,12,ES_CENTER | ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_DRONE_ADULTS,233,102,38,12,ES_CENTER | ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_ADULT_WORKER_INFEST,283,102,40,12,ES_CENTER | ES_AUTOHSCROLL
+    EDITTEXT        IDC_ADULT_DRONE_INFEST,331,102,40,12,ES_CENTER | ES_AUTOHSCROLL
+    EDITTEXT        IDC_WORKER_MITE_OFFSPRING,184,122,38,12,ES_CENTER | ES_AUTOHSCROLL
+    EDITTEXT        IDC_DRONE_MITE_OFFSPRING,232,122,38,12,ES_CENTER | ES_AUTOHSCROLL
+    EDITTEXT        IDC_WORKER_MITE_SURVIVORSHIP,283,122,40,12,ES_CENTER | ES_AUTOHSCROLL
+    EDITTEXT        IDC_DRONE_MITE_SURVIVORSHIP,331,122,40,12,ES_CENTER | ES_AUTOHSCROLL
+    GROUPBOX        "",IDC_EGGS_GROUP,124,51,156,20
+    CTEXT           "Worker",IDC_WORKER,188,46,34,8
+    CTEXT           "Drone",IDC_DRONE,234,46,33,8
+    GROUPBOX        "",IDC_LARVAE,124,66,156,20
+    CTEXT           "Eggs",IDC_ROW_HEADING1,128,60,54,8
+    CTEXT           "Larvae",IDC_ROW_HEADING2,128,75,54,8
+    GROUPBOX        "",IDC_LARVAE2,124,81,260,20
+    CTEXT           "Capped Brood",IDC_ROW_HEADING3,128,90,54,8
+    CTEXT           "% Varroa Infestation",IDC_COLUMN_HEADING3,298,68,61,8
+    CTEXT           "Worker",IDC_WORKER2,289,77,34,8
+    CTEXT           "Drone",IDC_DRONE2,338,77,33,8
+    CTEXT           "Adult Bees",IDC_ROW_HEADING4,128,105,54,8
+    GROUPBOX        "Mite Bionomics",IDC_MITE_GROUP,124,114,157,23
+    LTEXT           "Offspring/mite",IDC_MITE_ROW_HEADING,131,123,48,10
+    GROUPBOX        "Mite Survivorship %",IDC_MITE_SURVIVORSHIP_GROUP,280,114,104,22
+    GROUPBOX        "",IDC_STATIC,124,95,260,20
+    CONTROL         "Slider1",IDC_SLIDERFORAGER,"msctls_trackbar32",TBS_AUTOTICKS | TBS_BOTH | WS_TABSTOP,84,162,55,19
+    LTEXT           "Forager Lifespan (days)",IDC_STATIC,76,151,75,11
+    LTEXT           "Queen Strength",IDC_STATIC,205,151,50,10
+    LTEXT           "",IDC_FORAGERVAL,72,171,8,8,NOT WS_GROUP
+    CONTROL         "Slider2",IDC_SLIDERQUEEN,"msctls_trackbar32",TBS_AUTOTICKS | TBS_BOTH | WS_TABSTOP,201,162,53,19
+    LTEXT           "Weak",IDC_STATIC,180,167,22,8
+    LTEXT           "Strong",IDC_STATIC,259,167,21,8
+    PUSHBUTTON      "% Xition",IDC_BUTTON_EGG_SPAN,82,58,35,12
+    PUSHBUTTON      "% Xition",IDC_BUTTON_LARVAE_SPAN,82,73,35,12
+    PUSHBUTTON      "% Xition",IDC_BUTTON_BROOD_SPAN,82,88,35,12
+    PUSHBUTTON      "% Xition",IDC_BUTTON_ADULT_SPAN,82,101,35,12
+    CONTROL         "",IDC_CHECK_EN_EGG,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,70,59,8,10
+    CONTROL         "",IDC_CHECK_EN_LARV,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,70,74,8,10
+    CONTROL         "",IDC_CHECK_EN_BROOD,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,70,89,8,10
+    CONTROL         "",IDC_CHECK_EN_ADULT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,70,102,8,10
+    LTEXT           "Enable",IDC_STATIC,61,43,23,11
+    PUSHBUTTON      "Lifespan",IDC_BUTTON_FORAGER_SPAN2,24,148,35,12
+    CONTROL         "",IDC_CHECK_EN_FORAGER,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,12,149,8,10
+    PUSHBUTTON      "Lifespan",IDC_BUTTON_ADULT_SPAN2,25,101,35,12
+    CONTROL         "",IDC_CHECK_EN_ADULTSP,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,13,103,8,10
+    RTEXT           "Active Forager Proportion",IDC_STATIC,300,150,90,10
+    EDITTEXT        IDC_EDIT_MAXPFORAGERS,338,163,23,13,ES_AUTOHSCROLL
+END
+
+IDD_CREATE_HEADER DIALOG 0, 0, 336, 237
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Create Weather File Header"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_AVTEMP,76,36,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_MAXTEMP,76,58,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_MINTEMP,76,81,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_RAINFALL,76,106,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_WINDSPEED,76,126,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SOLAR_RAD,75,149,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_INTERVAL,115,197,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_W_BEG_TIME,201,44,40,14,ES_AUTOHSCROLL | WS_DISABLED
+    EDITTEXT        IDC_W_END_TIME,261,44,40,14,ES_AUTOHSCROLL | WS_DISABLED
+    EDITTEXT        IDC_W_BEG_DATE,201,60,40,14,ES_AUTOHSCROLL | WS_DISABLED
+    EDITTEXT        IDC_W_END_DATE,261,60,40,14,ES_AUTOHSCROLL | WS_DISABLED
+    CONTROL         " Deg F",IDC_RADIO_F,"Button",BS_AUTORADIOBUTTON | WS_GROUP,143,114,37,10
+    CONTROL         "Deg C",IDC_RADIO_C,"Button",BS_AUTORADIOBUTTON,143,129,36,10
+    EDITTEXT        IDC_SIM_TIME,267,111,40,14,ES_AUTOHSCROLL | WS_DISABLED | WS_GROUP
+    EDITTEXT        IDC_SIM_DATE,267,127,40,14,ES_AUTOHSCROLL | WS_DISABLED
+    CONTROL         "MINMAX",IDC_RADIOMINMAX,"Button",BS_AUTORADIOBUTTON | WS_GROUP,245,162,45,10
+    CONTROL         "HOURLY",IDC_RADIOHOURLY,"Button",BS_AUTORADIOBUTTON,245,174,46,10
+    DEFPUSHBUTTON   "OK",IDOK,196,207,50,14,WS_GROUP
+    PUSHBUTTON      "Cancel",IDCANCEL,265,206,50,14
+    GROUPBOX        "Weather Times and Dates",IDC_STATIC,127,15,191,73
+    LTEXT           "Beginning",IDC_STATIC,205,28,32,8
+    LTEXT           "Ending",IDC_STATIC,269,31,23,8
+    LTEXT           "Time",IDC_STATIC,171,47,16,8
+    LTEXT           "Date",IDC_STATIC,171,60,16,8
+    GROUPBOX        "Temperature Scale",IDC_STATIC,126,96,74,50
+    GROUPBOX        "Simulation Time and Date",IDC_STATIC,206,96,112,50
+    LTEXT           "Start Time",IDC_STATIC,214,112,33,8
+    LTEXT           "Start Date",IDC_STATIC,213,130,33,8
+    GROUPBOX        "Column Numbers",IDC_STATIC,17,15,104,158
+    LTEXT           "Average Temp",IDC_STATIC,21,39,48,8
+    LTEXT           "Max Temp",IDC_STATIC,35,60,34,8
+    LTEXT           "Min Temp",IDC_STATIC,37,83,32,8
+    LTEXT           "Rainfall",IDC_STATIC,45,108,24,8
+    LTEXT           "Interval Between Readings",IDC_STATIC,13,201,86,8
+    LTEXT           "(Minutes)",IDC_STATIC,43,209,30,8
+    LTEXT           "Windspeed",IDC_STATIC,32,128,37,8
+    GROUPBOX        "File Format",IDC_STATIC,205,154,112,35
+    LTEXT           "Solar Radiation",IDC_STATIC,20,151,49,8
+END
+
+IDD_SIMULATION_BAR DIALOGEX 0, 0, 132, 355
+STYLE DS_SETFONT | WS_CHILD | WS_BORDER
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    CONTROL         "Enable",IDC_RADIO_IM_ON,"Button",BS_AUTORADIOBUTTON | WS_GROUP,20,139,38,10
+    CONTROL         "Disable",IDC_RADIO_IM_OFF,"Button",BS_AUTORADIOBUTTON,62,139,39,10
+    PUSHBUTTON      "Run",IDC_BUTTON_GO,39,220,50,14,WS_DISABLED
+    LTEXT           "Start",IDC_STATIC,20,175,23,8
+    LTEXT           "Stop",IDC_STATIC,20,191,16,8
+    GROUPBOX        "Simulation Period",IDC_STATIC,14,160,102,53
+    GROUPBOX        "Immigration",IDC_STATIC,13,112,101,43
+    PUSHBUTTON      "Setup",IDC_BUTTON_IM_SETUP,74,122,32,14,WS_DISABLED
+    LTEXT           "",IDC_IM_TYPE,24,126,40,8
+    CONTROL         "DateTimePicker1",IDC_EDIT_START,"SysDateTimePick32",DTS_RIGHTALIGN | WS_TABSTOP,45,170,60,15
+    CONTROL         "DateTimePicker1",IDC_EDIT_STOP,"SysDateTimePick32",DTS_RIGHTALIGN | WS_TABSTOP,45,190,60,15
+    CONTROL         IDB_BITMAP7,IDC_STATIC,"Static",SS_BITMAP | WS_BORDER,15,14,101,71
+    EDITTEXT        IDC_LIST_EVENT_LOG,16,254,109,87,ES_MULTILINE | ES_AUTOVSCROLL | ES_AUTOHSCROLL | WS_VSCROLL | WS_HSCROLL
+    CTEXT           "Colony Events",IDC_STATIC,27,242,76,10
+END
+
+IDD_IMMIGRATION DIALOGEX 0, 0, 326, 254
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Immigration Setup"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         "Radio1",IDC_RADIOPOLY,"Button",BS_AUTORADIOBUTTON | BS_ICON | BS_PUSHLIKE | WS_GROUP,42,36,39,29
+    CONTROL         "Radio1",IDC_RADIOEXP,"Button",BS_AUTORADIOBUTTON | BS_ICON | BS_PUSHLIKE,130,36,39,29
+    CONTROL         "Radio1",IDC_RADIOLOG,"Button",BS_AUTORADIOBUTTON | BS_ICON | BS_PUSHLIKE,218,35,39,29
+    CONTROL         "Radio1",IDC_RADIOSIN,"Button",BS_AUTORADIOBUTTON | BS_ICON | BS_PUSHLIKE,42,96,39,29
+    CONTROL         "Radio1",IDC_RADIOCOS,"Button",BS_AUTORADIOBUTTON | BS_ICON | BS_PUSHLIKE,130,96,39,29
+    CONTROL         "Radio1",IDC_RADIOTAN,"Button",BS_AUTORADIOBUTTON | BS_ICON | BS_PUSHLIKE,218,95,39,29
+    CONTROL         "DateTimePicker1",IDC_IM_START,"SysDateTimePick32",DTS_RIGHTALIGN | WS_GROUP | WS_TABSTOP,257,179,56,15,0,HIDC_IM_START
+    CONTROL         "DateTimePicker2",IDC_IM_END,"SysDateTimePick32",DTS_RIGHTALIGN | WS_TABSTOP,257,198,56,15
+    EDITTEXT        IDC_MITE_NUM,99,204,40,14,ES_CENTER | ES_AUTOHSCROLL
+    EDITTEXT        IDC_MITE_PCT_RESISTANT,99,225,40,14,ES_CENTER | ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,213,233,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,269,233,50,14
+    LTEXT           "Immigration Start Date",IDC_STATIC,179,184,70,8
+    LTEXT           "Immigration End Date",IDC_STATIC,181,201,68,8
+    CTEXT           "None",IDC_IM_SELECTED,26,185,95,8
+    GROUPBOX        "Immigration Type Selected",IDC_STATIC,25,174,99,24
+    LTEXT           "Number of Mites Immigrating",IDC_STATIC,29,205,56,19
+    LTEXT           "Polynomial",IDC_STATIC,46,70,34,8
+    LTEXT           "Exponential",IDC_STATIC,130,72,38,8
+    LTEXT           "Logarithmic",IDC_STATIC,221,71,37,8
+    LTEXT           "Sine",IDC_STATIC,52,129,15,8
+    LTEXT           "Cosine",IDC_STATIC,140,130,22,8
+    LTEXT           "Tangent",IDC_STATIC,226,128,28,8
+    LTEXT           "Percent Resistant to Miticide",IDC_STATIC,29,224,58,17
+    GROUPBOX        "Immigration Profile",IDC_STATIC,22,18,260,139
+END
+
+IDD_SELECT_GRAPHS DIALOGEX 0, 0, 384, 260
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Select Parameters to Plot"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    CONTROL         "Foragers",IDC_CHECK_F,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,39,23,43,10
+    CONTROL         "Worker Adults",IDC_CHECK_AW,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,39,36,61,10
+    CONTROL         "Worker Brood",IDC_CHECK_WB,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,39,50,60,10
+    CONTROL         "Worker Larvae",IDC_CHECK_WL,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,39,65,63,10
+    CONTROL         "Worker Eggs",IDC_CHECK_WE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,39,79,57,10
+    CONTROL         "Colony Size",IDC_CHECK_CS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,108,23,53,10
+    CONTROL         "Drone Adults",IDC_CHECK_AD,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,108,36,57,10
+    CONTROL         "Drone Brood",IDC_CHECK_DB,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,108,50,56,10
+    CONTROL         "Drone Larvae",IDC_CHECK_DL,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,108,65,59,10
+    CONTROL         "Drone Eggs",IDC_CHECK_DE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,108,79,53,10
+    CONTROL         "Total Mites",IDC_CHECK_TM,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,34,127,51,10
+    CONTROL         "Free Mites",IDC_CHECK_RM,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,34,139,49,10
+    CONTROL         "Mites In Worker Brood",IDC_CHECK_MWB,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,34,151,87,10
+    CONTROL         "Mites In Drone Brood",IDC_CHECK_MDB,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,34,163,83,10
+    CONTROL         "Mites per Worker Brood Cell",IDC_CHECK_PWB,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,34,175,104,10
+    CONTROL         "Mites per Drone Brood Cell",IDC_CHECK_PDB,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,34,187,100,10
+    CONTROL         "Immigrating Mites",IDC_CHECK_IM,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,34,211,70,10
+    DEFPUSHBUTTON   "OK",IDOK,207,212,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,207,230,50,14
+    GROUPBOX        "Bee Information",IDC_STATIC,22,7,162,102
+    GROUPBOX        "Mite Information",IDC_STATIC,21,113,163,141
+    CONTROL         "Proportion Resistant Free Mites",IDC_CHECK_PRM,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,34,199,114,10
+    CONTROL         "Mites Dying per Day ",IDC_CHECK_MD,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,34,223,81,10
+    CONTROL         "Proportion of Mite Population Dying",IDC_CHECK_PMD,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,34,235,127,10
+    GROUPBOX        "Resources",IDC_STATIC,190,114,90,85
+    CONTROL         "Nectar Stores",IDC_CHECK_NS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,197,126,73,13
+    CONTROL         "Pollen Stores",IDC_CHECK_PS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,197,167,73,13
+    CONTROL         "N-Pest Conc (ug/g)",IDC_CHECK_NCONC,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,198,145,77,10
+    CONTROL         "P-Pest  Conc (ug/g)",IDC_CHECK_PCONC,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,197,184,79,10
+    GROUPBOX        "Daily Pesticide Mortality",IDC_STATIC,189,7,87,102
+    CONTROL         "Drone Larvae",IDC_CHECK_DDL,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,196,86,59,10
+    CONTROL         "Worker Larvae",IDC_CHECK_DWL,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,196,70,63,10
+    CONTROL         "Drone Adults",IDC_CHECK_DDA,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,196,54,57,10
+    CONTROL         "Foragers",IDC_CHECK_DFG,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,196,22,43,10
+    CONTROL         "Worker Adults",IDC_CHECK_DWA,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,196,38,61,10
+    GROUPBOX        "Y-Axis Scaling",IDC_STATIC,282,8,88,101
+    CONTROL         "Auto",IDC_RADIO_AUTO,"Button",BS_AUTORADIOBUTTON | WS_GROUP,287,22,31,10
+    CONTROL         "Manual",IDC_RADIO_MANUAL,"Button",BS_AUTORADIOBUTTON,287,36,44,10
+    LTEXT           "Max",IDC_STATICMAX,287,59,20,10
+    LTEXT           "Min",IDC_STATICMIN,287,77,20,10
+    EDITTEXT        IDC_EDIT_MAX,305,59,50,11,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_MIN,305,76,52,11,ES_AUTOHSCROLL
+END
+
+IDD_PROGRESS DIALOG 0, 0, 250, 28
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Progress1",IDC_PROGRESS,"msctls_progress32",WS_BORDER,37,7,170,14
+END
+
+IDD_SPLASH DIALOG 0, 0, 250, 136
+STYLE DS_SETFONT | DS_3DLOOK | DS_CENTER | WS_POPUP | WS_VISIBLE
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         IDB_SPLASH,IDC_SPLASH_CONT,"Static",SS_BITMAP,0,0,333,167
+END
+
+IDD_OLECTRAGRAPHDLG DIALOGEX 0, 0, 343, 223
+STYLE DS_SETFONT | WS_MAXIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "Simulation Results"
+MENU IDR_CHARTMENU
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,291,206,50,14,NOT WS_VISIBLE
+    CONTROL         "",IDC_OLECTRACHART,
+                    "{92D71E93-25A8-11CF-A640-9986B64D9618}",WS_TABSTOP,1,1,340,219
+END
+
+IDD_ACTION_FORM DIALOGEX 0, 0, 360, 191
+STYLE DS_SETFONT | WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "Actions"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    CONTROL         "Enable",IDC_ENABLE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,13,17,38,10
+    CONTROL         "Scheduled",IDC_RADIO_SCHED,"Button",BS_AUTORADIOBUTTON | WS_GROUP,13,28,49,10
+    CONTROL         "Automatic",IDC_RADIO_AUTO,"Button",BS_AUTORADIOBUTTON,62,28,46,10
+    CONTROL         "Slider2",IDC_RQSLIDERQUEEN,"msctls_trackbar32",TBS_AUTOTICKS | WS_TABSTOP,39,58,53,18
+    EDITTEXT        IDC_EDIT_DELAY,77,88,19,14,ES_AUTOHSCROLL
+    CONTROL         "DateTimePicker1",IDC_QUEEN_DATE,"SysDateTimePick32",DTS_RIGHTALIGN | WS_TABSTOP,59,122,59,15
+    CONTROL         "This date only",IDC_RADIO_RQ_ONCE,"Button",BS_AUTORADIOBUTTON | WS_GROUP,17,140,60,10
+    CONTROL         "Annually Beginning on this date",IDC_RADIO_RQ_ANNUAL,
+                    "Button",BS_AUTORADIOBUTTON | BS_MULTILINE,16,153,93,16
+    CONTROL         "Enable",IDC_VT_ENABLE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,143,17,38,10
+    EDITTEXT        IDC_RESISTANT,280,158,19,14,ES_AUTOHSCROLL
+    CONTROL         "DateTimePicker1",IDC_TREATMENT_START,"SysDateTimePick32",DTS_RIGHTALIGN | WS_TABSTOP,179,135,59,15
+    EDITTEXT        IDC_MORTALITY,280,136,19,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_TREATMENT_DURATION,186,157,19,14,ES_AUTOHSCROLL
+    GROUPBOX        "Re-Queening",IDC_STATIC,7,7,121,177
+    RTEXT           "Egg Laying Delay",IDC_STATIC,29,87,39,16
+    LTEXT           "Days ",IDC_STATIC,97,90,23,8
+    LTEXT           "New Queen Strength",IDC_STATIC,36,46,69,10
+    LTEXT           "Weak",IDC_STATIC,19,62,19,10
+    LTEXT           "Strong",IDC_STATIC,92,64,21,10
+    RTEXT           "Re-Queen Date",IDC_STATICDATE,19,121,36,16,NOT WS_GROUP
+    GROUPBOX        "Miticide Treatment",IDC_STATIC,133,7,185,177,WS_GROUP
+    RTEXT           "Start Treatment",IDC_STATIC,138,135,36,17
+    RTEXT           "Treat For",IDC_STATIC,150,158,31,12
+    LTEXT           "Weeks",IDC_STATIC,210,158,27,11
+    RTEXT           "Percent Mortality",IDC_STATIC,245,133,30,20
+    RTEXT           "Percent Resistant",IDC_STATIC,236,155,40,20
+    PUSHBUTTON      "Add",IDC_BUTTON_ADD,138,54,26,14
+    PUSHBUTTON      "Del",IDC_BUTTON_DEL,139,78,23,14
+    LTEXT           "Treatment Information",IDC_STATIC,200,30,76,11
+    CONTROL         "Custom4",IDC_GRIDCTRL1,"MFCGridCtrl",WS_TABSTOP,168,41,139,80
+END
+
+IDD_REMOVECOMB DIALOG 0, 0, 186, 95
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Comb Removal"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,129,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,129,24,50,14
+    CONTROL         "Enable",IDC_REMCOMBEN,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,19,15,38,10
+    CONTROL         "DateTimePicker1",IDC_DATETIMEPICKER1,"SysDateTimePick32",DTS_RIGHTALIGN | WS_TABSTOP,17,50,66,15
+    LTEXT           "Date",IDC_STATIC,94,54,16,8
+    EDITTEXT        IDC_PERCENT,42,68,40,14,ES_AUTOHSCROLL
+    LTEXT           "Percent (0-100)",IDC_STATIC,91,73,50,8
+END
+
+IDD_OPTIONS DIALOGEX 0, 0, 307, 199
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "VarroaPop Options"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,183,178,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,250,178,50,14
+    GROUPBOX        "Data Display Options",IDC_STATIC,13,13,133,54
+    CONTROL         "Weekly",IDC_RADIOWEEKLY,"Button",BS_AUTORADIOBUTTON | WS_GROUP,23,25,40,10
+    CONTROL         "Daily",IDC_RADIODAILY,"Button",BS_AUTORADIOBUTTON,23,41,31,10
+    GROUPBOX        "Field Delimiters",IDC_STATIC,15,93,118,67,WS_GROUP
+    CONTROL         "Fixed Field Width",IDC_RADIOFIELDFIXED,"Button",BS_AUTORADIOBUTTON | WS_GROUP,27,112,70,10
+    CONTROL         "Comma Delimited",IDC_RADIODIELDCOMMA,"Button",BS_AUTORADIOBUTTON,27,123,70,10
+    CONTROL         "Tab Delimited",IDC_RADIOFIELDTAB,"Button",BS_AUTORADIOBUTTON,27,134,59,10
+    CONTROL         "Include Weather and Colony File Names",IDC_CHECKWTHCOL,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,142,143,143,10
+    CONTROL         IDB_BITMAP3,IDC_STATIC,"Static",SS_BITMAP,177,22,100,33,WS_EX_DLGMODALFRAME | WS_EX_TRANSPARENT
+    GROUPBOX        "Results Data File Formatting",IDC_STATIC,7,80,293,87
+END
+
+IDD_WEATHEREDIT DIALOGEX 0, 0, 388, 228
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "Weather Editor"
+MENU IDR_MENUWEATHER
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,273,207,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,331,207,50,14
+    CONTROL         "",IDC_WEATHERGRAPH,
+                    "{92D71E93-25A8-11CF-A640-9986B64D9618}",WS_TABSTOP,43,37,270,145
+    SCROLLBAR       IDC_SCROLLBAR1,50,193,144,15
+END
+
+IDD_PROPPAGE_MEDIUM DIALOGEX 0, 0, 210, 154
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "Property Page"
+FONT 8, "MS Shell Dlg", 400, 0, 0x0
+BEGIN
+    LTEXT           "TODO: layout property page",IDC_STATIC,60,73,90,8
+END
+
+IDD_WEATHER_FORM1 DIALOGEX 0, 0, 493, 154
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "Weather"
+FONT 8, "MS Shell Dlg", 400, 0, 0x0
+BEGIN
+    LTEXT           "Weather File:",IDC_STATIC,16,17,50,15
+    LTEXT           "",IDC_STATIC_WF_NAME,75,18,400,11,0,WS_EX_CLIENTEDGE
+    PUSHBUTTON      "Select Weather",IDC_BUTTON_SEL_WEATHER,213,49,58,14
+END
+
+IDD_ACTION_FORM1 DIALOGEX 0, 0, 445, 183
+STYLE DS_SETFONT | WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "Actions"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    CONTROL         "Enable",IDC_ENABLE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,13,17,38,10
+    CONTROL         "Scheduled",IDC_RADIO_SCHED,"Button",BS_AUTORADIOBUTTON | WS_GROUP,13,28,49,10
+    CONTROL         "Automatic",IDC_RADIO_AUTO,"Button",BS_AUTORADIOBUTTON,62,28,46,10
+    CONTROL         "Slider2",IDC_RQSLIDERQUEEN,"msctls_trackbar32",TBS_AUTOTICKS | WS_TABSTOP,39,58,53,18
+    EDITTEXT        IDC_EDIT_DELAY,77,88,19,14,ES_AUTOHSCROLL
+    CONTROL         "DateTimePicker1",IDC_QUEEN_DATE,"SysDateTimePick32",DTS_RIGHTALIGN | WS_TABSTOP,59,122,59,15
+    CONTROL         "This date only",IDC_RADIO_RQ_ONCE,"Button",BS_AUTORADIOBUTTON | WS_GROUP,17,140,60,10
+    CONTROL         "Annually Beginning on this date",IDC_RADIO_RQ_ANNUAL,
+                    "Button",BS_AUTORADIOBUTTON | BS_MULTILINE,16,153,93,16
+    CONTROL         "Enable",IDC_VT_ENABLE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,143,17,38,10
+    EDITTEXT        IDC_RESISTANT,240,18,19,14,ES_AUTOHSCROLL
+    CONTROL         "DateTimePicker1",IDC_TREATMENT_START,"SysDateTimePick32",DTS_RIGHTALIGN | WS_TABSTOP,179,135,59,15
+    EDITTEXT        IDC_MORTALITY,280,136,19,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_TREATMENT_DURATION,186,157,19,14,ES_AUTOHSCROLL
+    CONTROL         "Enable",IDC_ST_ENABLE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,341,17,38,10
+    CONTROL         "",IDC_TREATMENT_START2,"SysDateTimePick32",DTS_RIGHTALIGN | WS_TABSTOP,367,37,59,15
+    EDITTEXT        IDC_EDITINITSPORES,368,60,26,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDITMORT10,387,107,29,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDITMORT25,387,119,29,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDITMORT50,387,131,29,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDITMORT75,387,143,29,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDITMORT90,387,155,29,12,ES_AUTOHSCROLL
+    GROUPBOX        "Re-Queening",IDC_STATIC,7,7,121,169
+    RTEXT           "Egg Laying Delay",IDC_STATIC,29,87,39,16
+    LTEXT           "Days ",IDC_STATIC,97,90,23,8
+    LTEXT           "New Queen Strength",IDC_STATIC,36,46,69,10
+    LTEXT           "Weak",IDC_STATIC,19,62,19,10
+    LTEXT           "Strong",IDC_STATIC,92,64,21,10
+    RTEXT           "Re-Queen Date",IDC_STATICDATE,19,121,36,16,NOT WS_GROUP
+    GROUPBOX        "Miticide Treatment",IDC_STATIC,133,8,179,169,WS_GROUP
+    RTEXT           "Start Treatment",IDC_STATIC,138,135,36,17
+    RTEXT           "Treat For",IDC_STATIC,150,158,31,12
+    LTEXT           "Weeks",IDC_STATIC,210,158,27,11
+    RTEXT           "Percent Mortality",IDC_STATIC,245,133,30,20
+    RTEXT           "Percent Resistant",IDC_STATIC,195,15,40,20
+    GROUPBOX        "Spore Treatment",IDC_STATIC,315,7,123,169,WS_GROUP
+    RTEXT           "Start Treatment",IDC_STATIC,326,37,36,17
+    LTEXT           "Initial Amount",IDC_STATIC,323,63,43,8
+    LTEXT           "x 10^10",IDC_STATIC,397,62,26,8
+    GROUPBOX        "Mortality Rate vs Spore Density",IDC_STATIC,314,81,120,95
+    LTEXT           "Mortality",IDC_STATIC,351,95,27,8
+    LTEXT           "Spores per mite",IDC_STATIC,385,94,50,8
+    LTEXT           "10%",IDC_STATIC,358,108,14,8
+    LTEXT           "25%",IDC_STATIC,358,121,14,8
+    LTEXT           "50%",IDC_STATIC,358,134,14,8
+    LTEXT           "75%",IDC_STATIC,358,145,14,8
+    LTEXT           "90%",IDC_STATIC,358,156,14,8
+    PUSHBUTTON      "Add",IDC_BUTTON_ADD,138,54,26,14
+    CONTROL         "",IDC_LIST_TREAT_DATES,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_AUTOARRANGE | LVS_EDITLABELS | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,171,51,130,72
+    PUSHBUTTON      "Del",IDC_BUTTON_DEL,139,78,23,14,WS_DISABLED
+    LTEXT           "Treatment Information",IDC_STATIC,200,38,76,11
+END
+
+IDD_SPAN_VALUE DIALOGEX 0, 0, 316, 183
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Define Date Spans and Values"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,205,162,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,259,162,50,14
+    CONTROL         "Custom1",IDC_DRV_Ctrl2,"MFCGridCtrl",WS_TABSTOP,7,7,193,68
+    CONTROL         "",IDC_DATETIMESTART,"SysDateTimePick32",DTS_RIGHTALIGN | WS_TABSTOP,89,84,57,15
+    CONTROL         "",IDC_DATETIMEEND,"SysDateTimePick32",DTS_RIGHTALIGN | WS_TABSTOP,89,104,57,15
+    EDITTEXT        IDC_EDIT_VAL,89,124,40,14,ES_AUTOHSCROLL
+    RTEXT           "Start Date",IDC_STATIC,31,84,49,14
+    RTEXT           "End Date",IDC_STATIC,31,105,49,14
+    RTEXT           "Undef",IDC_VAL_LABEL,7,125,73,14
+    PUSHBUTTON      "Add",IDC_BUTTON1,115,146,27,14
+    GROUPBOX        "Add Item",IDC_STATIC,7,80,147,89
+    PUSHBUTTON      "Delete Selected Row",IDC_BUTTON_DEL_ITEM,207,7,77,16
+END
+
+IDD_ACTION_FORM2 DIALOGEX 0, 0, 445, 183
+STYLE DS_SETFONT | WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "Actions"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    CONTROL         "Enable",IDC_ENABLE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,13,17,38,10
+    CONTROL         "Scheduled",IDC_RADIO_SCHED,"Button",BS_AUTORADIOBUTTON | WS_GROUP,13,28,49,10
+    CONTROL         "Automatic",IDC_RADIO_AUTO,"Button",BS_AUTORADIOBUTTON,62,28,46,10
+    CONTROL         "Slider2",IDC_RQSLIDERQUEEN,"msctls_trackbar32",TBS_AUTOTICKS | WS_TABSTOP,39,58,53,18
+    EDITTEXT        IDC_EDIT_DELAY,77,88,19,14,ES_AUTOHSCROLL
+    CONTROL         "DateTimePicker1",IDC_QUEEN_DATE,"SysDateTimePick32",DTS_RIGHTALIGN | WS_TABSTOP,59,122,59,15
+    CONTROL         "This date only",IDC_RADIO_RQ_ONCE,"Button",BS_AUTORADIOBUTTON | WS_GROUP,17,140,60,10
+    CONTROL         "Annually Beginning on this date",IDC_RADIO_RQ_ANNUAL,
+                    "Button",BS_AUTORADIOBUTTON | BS_MULTILINE,16,153,93,16
+    CONTROL         "Enable",IDC_VT_ENABLE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,143,17,38,10
+    EDITTEXT        IDC_RESISTANT,280,158,19,14,ES_AUTOHSCROLL
+    CONTROL         "DateTimePicker1",IDC_TREATMENT_START,"SysDateTimePick32",DTS_RIGHTALIGN | WS_TABSTOP,179,135,59,15
+    EDITTEXT        IDC_MORTALITY,280,136,19,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_TREATMENT_DURATION,186,157,19,14,ES_AUTOHSCROLL
+    GROUPBOX        "Re-Queening",IDC_STATIC,7,7,121,169
+    RTEXT           "Egg Laying Delay",IDC_STATIC,29,87,39,16
+    LTEXT           "Days ",IDC_STATIC,97,90,23,8
+    LTEXT           "New Queen Strength",IDC_STATIC,36,46,69,10
+    LTEXT           "Weak",IDC_STATIC,19,62,19,10
+    LTEXT           "Strong",IDC_STATIC,92,64,21,10
+    RTEXT           "Re-Queen Date",IDC_STATICDATE,19,121,36,16,NOT WS_GROUP
+    GROUPBOX        "Miticide Treatment",IDC_STATIC,133,8,185,168,WS_GROUP
+    RTEXT           "Start Treatment",IDC_STATIC,138,135,36,17
+    RTEXT           "Treat For",IDC_STATIC,150,158,31,12
+    LTEXT           "Weeks",IDC_STATIC,210,158,27,11
+    RTEXT           "Percent Mortality",IDC_STATIC,245,133,30,20
+    RTEXT           "Percent Resistant",IDC_STATIC,236,155,40,20
+    PUSHBUTTON      "Add",IDC_BUTTON_ADD,138,54,26,14
+    PUSHBUTTON      "Del",IDC_BUTTON_DEL,139,78,23,14
+    LTEXT           "Treatment Information",IDC_STATIC,200,30,76,11
+    CONTROL         "Custom4",IDC_GRIDCTRL1,"MFCGridCtrl",WS_TABSTOP,168,41,139,80
+END
+
+IDD_PESTICIDE_PAGE DIALOGEX 0, 0, 569, 326
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "EPA Data"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    COMBOBOX        IDC_PESTICIDE_NAME,59,21,107,43,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_PESTICIDE_AD_SLOPE,81,46,27,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PESTICIDE_AD_LD50,81,61,27,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PESTICIDE_LARV_SLOPE,81,76,27,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PESTICIDE_LARV_LD50,81,91,27,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PESTICIDE_KOW,81,108,27,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PESTICIDE_KOC,81,125,27,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PESTICIDE_C_P1,235,48,27,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PESTICIDE_C_N1,274,48,27,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PESTICIDE_C_P2,235,62,27,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PESTICIDE_C_N2,274,62,27,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PESTICIDE_C_P3,235,76,27,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PESTICIDE_C_N3,274,76,27,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PESTICIDE_C_P4,235,90,27,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PESTICIDE_C_N4,274,90,27,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PESTICIDE_C_P5,235,104,27,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PESTICIDE_C_N5,274,104,27,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PESTICIDE_C_P6,235,118,27,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PESTICIDE_C_N6,274,118,27,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PESTICIDE_C_P7,235,132,27,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PESTICIDE_C_N7,274,132,27,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PESTICIDE_C_P8,235,146,27,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PESTICIDE_C_N8,274,146,27,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT1,370,48,33,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PESTICIDE_CONFACT,81,159,27,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT2,391,110,35,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT4,391,98,35,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT7,391,134,35,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT3,391,167,35,12,ES_AUTOHSCROLL
+    GROUPBOX        "Active Ingredient",IDC_STATIC,19,7,154,174
+    LTEXT           "Name",IDC_STATIC,29,21,29,10
+    LTEXT           "Adult Slope",IDC_STATIC,29,48,41,10
+    LTEXT           "Larva Slope",IDC_STATIC,29,78,41,10
+    LTEXT           "KOC",IDC_STATIC,29,123,41,10
+    LTEXT           "Adult LD50",IDC_STATIC,29,63,41,10
+    LTEXT           "Larva LD50",IDC_STATIC,29,93,41,10
+    LTEXT           "KOW",IDC_STATIC,29,108,41,10
+    PUSHBUTTON      "Add",IDC_BUTTON1,122,138,33,15
+    PUSHBUTTON      "Update",IDC_BUTTON2,122,115,33,15
+    GROUPBOX        "Consumption Data (mg/Day)",IDC_STATIC,177,7,137,173
+    LTEXT           "Lifestage",IDC_STATIC,188,33,36,11
+    LTEXT           "Pollen",IDC_STATIC,237,33,27,11
+    LTEXT           "Nectar",IDC_STATIC,274,31,36,11
+    LTEXT           "LarvaeD",IDC_STATIC,187,76,36,11
+    LTEXT           "Adult4-10",IDC_STATIC,187,104,36,11
+    LTEXT           "Adult1-3",IDC_STATIC,187,90,36,11
+    LTEXT           "Adult11-20",IDC_STATIC,187,118,36,11
+    LTEXT           "Larvae4",IDC_STATIC,187,48,36,11
+    LTEXT           "Larvae5",IDC_STATIC,187,62,36,11
+    LTEXT           "Foragers",IDC_STATIC,187,132,36,11
+    LTEXT           "AdultD",IDC_STATIC,187,146,36,11
+    GROUPBOX        "Exposure/Mortality Data",IDC_STATIC,321,7,218,197
+    CONTROL         "Enable",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,326,31,37,10
+    CONTROL         "Enable",IDC_CHECK2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,329,157,54,9
+    CONTROL         "Enable",IDC_CHECK3,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,331,88,37,10
+    LTEXT           "Contact Dose Factor",IDC_STATIC,28,156,50,15
+    LTEXT           "A.I. Conc (ug/g)",IDC_STATIC,327,168,59,12
+    GROUPBOX        "Foliar Spray",IDC_STATIC,325,18,195,61
+    LTEXT           "Application Rate (lb/A)",IDC_STATIC,327,42,38,16
+    GROUPBOX        "Soil",IDC_STATIC,325,78,195,71
+    GROUPBOX        "Seed",IDC_STATIC,325,147,195,54
+    LTEXT           "Theta",IDC_STATIC,332,113,37,10
+    LTEXT           "P",IDC_STATIC,335,124,37,10
+    LTEXT           "Foc",IDC_STATIC,334,136,37,10
+    LTEXT           "Half-Life",IDC_STATIC,28,141,41,10
+    EDITTEXT        IDC_PESTICIDE_HALFLIFE,81,142,27,12,ES_AUTOHSCROLL
+    LTEXT           "Application Date",IDC_STATIC,327,61,43,16
+    CONTROL         "",IDC_FOLIAR_APP_DATE,"SysDateTimePick32",DTS_RIGHTALIGN | WS_TABSTOP,369,62,61,12
+    GROUPBOX        "Exposure Interval",IDC_STATIC,434,27,78,44
+    CONTROL         "",IDC_FOL_FORAGEBEGIN,"SysDateTimePick32",DTS_RIGHTALIGN | WS_TABSTOP,448,38,61,13
+    CONTROL         "",IDC_FOL_FORAGEEND,"SysDateTimePick32",DTS_RIGHTALIGN | WS_TABSTOP,448,54,61,13
+    LTEXT           "B:",IDC_STATIC,437,40,9,8
+    LTEXT           "E:",IDC_STATIC,438,57,9,8
+    GROUPBOX        "Exposure Interval",IDC_STATIC,435,90,78,44
+    CONTROL         "",IDC_SOIL_FORAGEBEGIN,"SysDateTimePick32",DTS_RIGHTALIGN | WS_TABSTOP,449,101,61,13
+    CONTROL         "",IDC_SOIL_FORAGEEND,"SysDateTimePick32",DTS_RIGHTALIGN | WS_TABSTOP,449,117,61,13
+    LTEXT           "B:",IDC_STATIC,439,103,9,8
+    LTEXT           "E:",IDC_STATIC,439,120,9,8
+    GROUPBOX        "Exposure Interval",IDC_STATIC,436,152,78,44
+    CONTROL         "",IDC_SD_FORAGEBEGIN,"SysDateTimePick32",DTS_RIGHTALIGN | WS_TABSTOP,450,163,61,13
+    CONTROL         "",IDC_SD_FORAGEEND,"SysDateTimePick32",DTS_RIGHTALIGN | WS_TABSTOP,450,179,61,13
+    LTEXT           "B:",IDC_STATIC,439,165,9,8
+    LTEXT           "E:",IDC_STATIC,440,181,9,8
+    LTEXT           "A.I. Conc (ug/g)",IDC_STATIC,331,101,56,10
+    EDITTEXT        IDC_EDIT8,391,122,35,12,ES_AUTOHSCROLL
+    GROUPBOX        "Model Parameters",IDC_STATIC,19,183,298,136
+    LTEXT           "P-Trips/D",IDC_STATIC,27,199,33,9
+    LTEXT           "N-Trips/D",IDC_STATIC,27,212,34,9
+    EDITTEXT        IDC_EDIT6,67,198,24,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT9,67,212,23,12,ES_AUTOHSCROLL
+    LTEXT           "P-Load/P-Trip",IDC_STATIC,132,197,57,9
+    LTEXT           "N-Load/N-Trip",IDC_STATIC,131,210,57,9
+    EDITTEXT        IDC_EDIT10,195,197,35,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT11,195,209,35,12,ES_AUTOHSCROLL
+    GROUPBOX        "Diet",IDC_STATIC,76,37,41,68
+    EDITTEXT        IDC_PESTICIDE_AC_SLOPE,125,47,27,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PESTICIDE_AC_LD50,126,63,27,12,ES_AUTOHSCROLL
+    GROUPBOX        "Contact",IDC_STATIC,122,37,41,44
+    PUSHBUTTON      "Remove",IDC_BUTTON3,122,159,34,14
+    CONTROL         "Enable",IDC_CHECK_NPCont,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,336,216,37,10
+    PUSHBUTTON      "Select File",IDC_BUTTON_SELCONTFILE,441,215,50,14
+    LTEXT           "File:",IDC_STATIC_CONTFILENAME,334,228,182,11
+    GROUPBOX        "Nectar/Pollen Contamination Only",IDC_STATIC,325,206,197,46
+    GROUPBOX        "Supplemental Pollen Feeding",IDC_STATIC,26,228,134,72
+    GROUPBOX        "Supplemental Nectar Feeding",IDC_STATIC,177,227,134,72
+    CONTROL         "Enable",IDC_CHECK_SUP_POP_EN,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,32,240,37,10
+    CONTROL         "Enable",IDC_CHECK_SUP_NEC_EN,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,183,241,37,10
+    CONTROL         "",IDC_SUP_POL_BEGIN,"SysDateTimePick32",DTS_RIGHTALIGN | WS_TABSTOP,93,241,61,13
+    CONTROL         "",IDC_SUP_POL_END,"SysDateTimePick32",DTS_RIGHTALIGN | WS_TABSTOP,93,257,61,13
+    LTEXT           "B:",IDC_STATIC,83,243,9,8
+    LTEXT           "E:",IDC_STATIC,83,259,9,8
+    CONTROL         "",IDC_SUP_NEC_BEGIN,"SysDateTimePick32",DTS_RIGHTALIGN | WS_TABSTOP,247,240,61,13
+    CONTROL         "",IDC_SUP_NEC_END,"SysDateTimePick32",DTS_RIGHTALIGN | WS_TABSTOP,247,256,61,13
+    LTEXT           "B:",IDC_STATIC,237,243,9,8
+    LTEXT           "E:",IDC_STATIC,237,259,9,8
+    EDITTEXT        IDC_EDIT_SUP_POL_AMT,35,266,37,14,ES_AUTOHSCROLL
+    LTEXT           "Amount(g)",IDC_STATIC,38,253,34,12
+    EDITTEXT        IDC_EDIT_SUP_NEC_AMT,185,267,37,14,ES_AUTOHSCROLL
+    LTEXT           "Amount(g)",IDC_STATIC,188,254,34,12
+    GROUPBOX        "Init Resource Amt (g)",IDC_STATIC,327,256,81,62
+    LTEXT           "Pollen",IDC_STATIC,352,265,28,8
+    LTEXT           "Nectar",IDC_STATIC,351,290,28,8
+    EDITTEXT        IDC_EDIT_INIT_POLLEN,344,274,34,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_INIT_NECTAR,344,298,34,13,ES_AUTOHSCROLL
+    CONTROL         "Resources Required for Colony Survival",IDC_CHECK_RESOURCES,
+                    "Button",BS_AUTOCHECKBOX | BS_MULTILINE | WS_TABSTOP,503,262,52,43
+    CONTROL         "Annually Starting This Date",IDC_CHECK_POL_ANN,"Button",BS_AUTOCHECKBOX | BS_MULTILINE | WS_TABSTOP,96,273,60,25
+    CONTROL         "Annually Starting This Date",IDC_CHECK_NEC_AN,"Button",BS_AUTOCHECKBOX | BS_MULTILINE | WS_TABSTOP,248,271,60,25
+    GROUPBOX        "Max Resource Amt (g)",IDC_STATIC,414,255,81,62
+    LTEXT           "Pollen",IDC_STATIC,439,265,28,8
+    LTEXT           "Nectar",IDC_STATIC,437,290,28,8
+    EDITTEXT        IDC_EDIT_MAX_POLLEN,431,274,34,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_MAX_NECTAR,431,298,34,13,ES_AUTOHSCROLL
+END
+
+IDD_PESTICIDE_ADD DIALOGEX 0, 0, 176, 226
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Add Pesticide"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT1,79,31,82,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PESTICIDE_AD_SLOPE,81,54,27,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PESTICIDE_AC_SLOPE2,128,55,27,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PESTICIDE_AD_SLOPE7,81,68,27,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PESTICIDE_AC_LD50_2,128,69,27,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PESTICIDE_LARV_SLOPE,81,82,27,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PESTICIDE_LV_LD,81,96,27,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PESTICIDE_KOW,81,115,27,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PESTICIDE_KOC,81,129,27,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PESTICIDE_HL,81,143,27,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PESTICIDE_CF,81,157,27,12,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "Add",IDOK,45,205,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,102,205,50,14
+    GROUPBOX        "Active Ingredient",IDC_STATIC,15,14,154,178
+    LTEXT           "Name",IDC_STATIC,28,32,41,10
+    LTEXT           "Adult Slope",IDC_STATIC,28,55,41,10
+    LTEXT           "Larva Slope",IDC_STATIC,28,83,41,10
+    LTEXT           "KOC",IDC_STATIC,28,130,41,10
+    LTEXT           "Adult LD50",IDC_STATIC,28,69,41,10
+    LTEXT           "Larva LD50",IDC_STATIC,28,97,41,10
+    LTEXT           "KOW",IDC_STATIC,28,116,41,10
+    LTEXT           "Half-Life",IDC_STATIC,28,144,41,10
+    LTEXT           "Contact Factor",IDC_STATIC,28,158,41,17
+    GROUPBOX        "Diet",IDC_STATIC,74,45,46,65
+    GROUPBOX        "Contact",IDC_STATIC,122,45,39,43
+END
+
+IDD_RESOURCE_PAGE DIALOGEX 0, 0, 481, 211
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Resources"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "Supplemental Pollen Feeding",IDC_STATIC,17,15,196,134
+    GROUPBOX        "Supplemental Sucrose Feeding",IDC_STATIC,323,18,116,134
+    CONTROL         "Enable",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,23,30,76,9
+    CONTROL         "Enable",IDC_CHECK2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,332,32,76,9
+    CONTROL         "These Dates Only",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON,55,110,70,10
+    CONTROL         "Annually on These Dates",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON,55,126,126,10
+    CONTROL         "Custom1",IDC_CUSTOM1,"MFCGridCtrl",WS_TABSTOP,30,46,124,57
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 3,2,6,4
+ PRODUCTVERSION 3,2,6,4
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "000004b0"
+        BEGIN
+            VALUE "CompanyName", "US Department of Agriculture"
+            VALUE "FileDescription", "VarroaPop"
+            VALUE "FileVersion", "3, 2, 6, 5"
+            VALUE "InternalName", "VarroaPop"
+            VALUE "LegalCopyright", "Copyright © 1999 - 2016"
+            VALUE "OriginalFilename", "VarroaPop.exe"
+            VALUE "ProductName", "US Department of Agriculture VarroaPop"
+            VALUE "ProductVersion", "3, 2, 6, 5"
+        END
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "FileDescription", "VarroaPop MFC Application"
+            VALUE "FileVersion", "3, 2, 6, 5"
+            VALUE "InternalName", "VarroaPop"
+            VALUE "LegalCopyright", "Copyright (C) 1999 - 2016"
+            VALUE "OriginalFilename", "VarroaPop.exe"
+            VALUE "ProductName", "US Department of Agriculture VarroaPop"
+            VALUE "ProductVersion", "3, 2, 6, 5"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x0, 1200, 0x409, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 231
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 124
+    END
+
+    IDD_COLONY_DATA_FORM, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 420
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 190
+    END
+
+    IDD_CREATE_HEADER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 329
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 230
+    END
+
+    IDD_SIMULATION_BAR, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 125
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 348
+    END
+
+    IDD_IMMIGRATION, DIALOG
+    BEGIN
+        LEFTMARGIN, 6
+        RIGHTMARGIN, 319
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 247
+    END
+
+    IDD_SELECT_GRAPHS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 377
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 253
+    END
+
+    IDD_PROGRESS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 243
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 21
+    END
+
+    IDD_OLECTRAGRAPHDLG, DIALOG
+    BEGIN
+        RIGHTMARGIN, 341
+        TOPMARGIN, 1
+        BOTTOMMARGIN, 220
+    END
+
+    IDD_ACTION_FORM, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 353
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 184
+    END
+
+    IDD_REMOVECOMB, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 88
+    END
+
+    IDD_OPTIONS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 300
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 192
+    END
+
+    IDD_WEATHEREDIT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 381
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 221
+    END
+
+    IDD_PROPPAGE_MEDIUM, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 203
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 147
+    END
+
+    IDD_WEATHER_FORM1, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 486
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 147
+    END
+
+    IDD_ACTION_FORM1, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 438
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 176
+    END
+
+    IDD_SPAN_VALUE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 309
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 176
+    END
+
+    IDD_ACTION_FORM2, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 438
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 176
+    END
+
+    IDD_PESTICIDE_PAGE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 562
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 319
+    END
+
+    IDD_PESTICIDE_ADD, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 169
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 219
+    END
+
+    IDD_RESOURCE_PAGE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 474
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 204
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_OLECTRAGRAPHDLG DLGINIT
+BEGIN
+    IDC_OLECTRACHART, 0x37a, 2754, 0
+0x0020, 0x0000, 0x0043, 0x006f, 0x0070, 0x0079, 0x0072, 0x0069, 0x0067, 
+0x0068, 0x0074, 0x0020, 0x0028, 0x0063, 0x0029, 0x0020, 0x0031, 0x0039, 
+0x0039, 0x0036, 0x0020, 0x004b, 0x004c, 0x0020, 0x0047, 0x0072, 0x006f, 
+0x0075, 0x0070, 0x0020, 0x0049, 0x006e, 0x0063, 0x002e, 0x0029, 0x0000, 
+0x0001, 0x0000, 0x0021, 0x0000, 0x0015, 0x0000, 0x0000, 0x0001, 0x8001, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0002, 0x8001, 0x0001, 0x0000, 
+0x0000, 0x0600, 0x0100, 0x0b00, 0x4c4b, 0x435f, 0x4148, 0x5452, 0x322e, 
+0xb644, 0x0034, 0xcb00, 0x0024, 0x0000, 0x0000, 0x0200, 0x0000, 0x1a00, 
+0x0000, 0x0000, 0x0000, 0xfe00, 0xffff, 0x02ff, 0xff00, 0x0000, 0x0200, 
+0x0000, 0xff00, 0xffff, 0xffff, 0x0000, 0x0200, 0x0100, 0xff00, 0xff00, 
+0x0700, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0100, 0x0001, 0x0001, 
+0x0000, 0xfffe, 0xffff, 0x0002, 0xb4d2, 0x008c, 0x0002, 0x0000, 0xffff, 
+0xffff, 0xb4d2, 0x008c, 0x0002, 0x0001, 0xff00, 0x0000, 0x0007, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0101, 0x0200, 0x0000, 0xfe00, 0xffff, 
+0x02ff, 0x3200, 0x00ff, 0x0200, 0x0000, 0xff00, 0xffff, 0x32ff, 0x00ff, 
+0x0200, 0x0100, 0x0000, 0xcd00, 0x0700, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0100, 0x0001, 0x0003, 0x0000, 0xfffe, 0xffff, 0x0002, 0xd148, 
+0x00cc, 0x0002, 0x0000, 0xffff, 0xffff, 0xd148, 0x00cc, 0x0002, 0x0001, 
+0x00ff, 0x0000, 0x0007, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0101, 
+0x0400, 0x0000, 0xfe00, 0xffff, 0x02ff, 0x0000, 0xff00, 0x0200, 0x0000, 
+0xff00, 0xffff, 0x00ff, 0xff00, 0x0200, 0x0100, 0xff00, 0x0000, 0x0700, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0100, 0x0001, 0x0005, 0x0000, 
+0xfffe, 0xffff, 0x0002, 0x00ff, 0x00ff, 0x0002, 0x0000, 0xffff, 0xffff, 
+0x00ff, 0x00ff, 0x0002, 0x0001, 0x0000, 0x00cd, 0x0007, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0101, 0x0600, 0x0000, 0xfe00, 0xffff, 0x02ff, 
+0xad00, 0x2fff, 0x0200, 0x0000, 0xff00, 0xffff, 0xadff, 0x2fff, 0x0200, 
+0x0100, 0xff00, 0xff00, 0x0700, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x0100, 0x0001, 0x0007, 0x0000, 0xfffe, 0xffff, 0x0002, 0x0000, 0x00cd, 
+0x0002, 0x0000, 0xffff, 0xffff, 0x0000, 0x00cd, 0x0002, 0x0001, 0xce87, 
+0x00fa, 0x0007, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0101, 0x0800, 
+0x0000, 0xfe00, 0xffff, 0x03ff, 0xff00, 0x0000, 0x0200, 0x0000, 0xff00, 
+0xffff, 0xffff, 0x0000, 0x0200, 0x0100, 0xff00, 0xff00, 0x0700, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0100, 0x0001, 0x0009, 0x0000, 0xfffe, 
+0xffff, 0x0003, 0xb4d2, 0x008c, 0x0002, 0x0000, 0xffff, 0xffff, 0xb4d2, 
+0x008c, 0x0002, 0x0001, 0xff00, 0x0000, 0x0007, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0101, 0x0a00, 0x0000, 0xfe00, 0xffff, 0x03ff, 0x3200, 
+0x00ff, 0x0200, 0x0000, 0xff00, 0xffff, 0x32ff, 0x00ff, 0x0200, 0x0100, 
+0x0000, 0xcd00, 0x0700, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0100, 
+0x0001, 0x000b, 0x0000, 0xfffe, 0xffff, 0x0003, 0xd148, 0x00cc, 0x0002, 
+0x0000, 0xffff, 0xffff, 0xd148, 0x00cc, 0x0002, 0x0001, 0x00ff, 0x0000, 
+0x0007, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0101, 0x0c00, 0x0000, 
+0xfe00, 0xffff, 0x03ff, 0x0000, 0xff00, 0x0200, 0x0000, 0xff00, 0xffff, 
+0x00ff, 0xff00, 0x0200, 0x0100, 0xff00, 0x0000, 0x0700, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0100, 0x0001, 0x000d, 0x0000, 0xfffe, 0xffff, 
+0x0003, 0x00ff, 0x00ff, 0x0002, 0x0000, 0xffff, 0xffff, 0x00ff, 0x00ff, 
+0x0002, 0x0001, 0x0000, 0x00cd, 0x0007, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0101, 0x0e00, 0x0000, 0xfe00, 0xffff, 0x03ff, 0xad00, 0x2fff, 
+0x0200, 0x0000, 0xff00, 0xffff, 0xadff, 0x2fff, 0x0200, 0x0100, 0xff00, 
+0xff00, 0x0700, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0100, 0x0001, 
+0x000f, 0x0000, 0xfffe, 0xffff, 0x0003, 0x0000, 0x00cd, 0x0002, 0x0000, 
+0xffff, 0xffff, 0x0000, 0x00cd, 0x0002, 0x0001, 0xce87, 0x00fa, 0x0007, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0101, 0x1000, 0x0000, 0xfe00, 
+0xffff, 0x04ff, 0xff00, 0x0000, 0x0200, 0x0000, 0xff00, 0xffff, 0xffff, 
+0x0000, 0x0200, 0x0100, 0xff00, 0xff00, 0x0700, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0100, 0x0001, 0x0011, 0x0000, 0xfffe, 0xffff, 0x0004, 
+0xb4d2, 0x008c, 0x0002, 0x0000, 0xffff, 0xffff, 0xb4d2, 0x008c, 0x0002, 
+0x0001, 0xff00, 0x0000, 0x0007, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x0101, 0x1200, 0x0000, 0xfe00, 0xffff, 0x04ff, 0x3200, 0x00ff, 0x0200, 
+0x0000, 0xff00, 0xffff, 0x32ff, 0x00ff, 0x0200, 0x0100, 0x0000, 0xcd00, 
+0x0700, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0100, 0x0001, 0x0013, 
+0x0000, 0xfffe, 0xffff, 0x0004, 0xd148, 0x00cc, 0x0002, 0x0000, 0xffff, 
+0xffff, 0xd148, 0x00cc, 0x0002, 0x0001, 0x00ff, 0x0000, 0x0007, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0101, 0x1400, 0x0000, 0xfe00, 0xffff, 
+0x04ff, 0x0000, 0xff00, 0x0200, 0x0000, 0xff00, 0xffff, 0x00ff, 0xff00, 
+0x0200, 0x0100, 0xff00, 0x0000, 0x0700, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0100, 0x0001, 0x0015, 0x0000, 0xfffe, 0xffff, 0x0004, 0x00ff, 
+0x00ff, 0x0002, 0x0000, 0xffff, 0xffff, 0x00ff, 0x00ff, 0x0002, 0x0001, 
+0x0000, 0x00cd, 0x0007, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0101, 
+0x1600, 0x0000, 0xfe00, 0xffff, 0x04ff, 0xad00, 0x2fff, 0x0200, 0x0000, 
+0xff00, 0xffff, 0xadff, 0x2fff, 0x0200, 0x0100, 0xff00, 0xff00, 0x0700, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0100, 0x0001, 0x0017, 0x0000, 
+0xfffe, 0xffff, 0x0004, 0xb4d2, 0x008c, 0x0002, 0x0000, 0xffff, 0xffff, 
+0xb4d2, 0x008c, 0x0002, 0x0001, 0xff00, 0x0000, 0x0007, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0101, 0x1800, 0x0000, 0xfe00, 0xffff, 0x05ff, 
+0x3200, 0x00ff, 0x0200, 0x0000, 0xff00, 0xffff, 0x32ff, 0x00ff, 0x0200, 
+0x0100, 0x0000, 0xcd00, 0x0700, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x0100, 0x0001, 0x0019, 0x0000, 0xfffe, 0xffff, 0x0005, 0xd148, 0x00cc, 
+0x0002, 0x0000, 0xffff, 0xffff, 0xd148, 0x00cc, 0x0002, 0x0001, 0x00ff, 
+0x0000, 0x0007, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0101, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0100, 0x0000, 0x0001, 0xc8a0, 0x85eb, 0xccf3, 
+0x7fe1, 0x0004, 0x0000, 0x0005, 0x0000, 0x0000, 0x0000, 0x0000, 0x3ff0, 
+0x0000, 0x0000, 0x0000, 0x4034, 0x0000, 0x0000, 0x0000, 0x4020, 0x0000, 
+0x0000, 0x0000, 0x4024, 0x0000, 0x0000, 0x0000, 0x4030, 0x0000, 0x0000, 
+0x0000, 0x4000, 0x0000, 0x0000, 0x0000, 0x4036, 0x0000, 0x0000, 0x0000, 
+0x4028, 0x0000, 0x0000, 0x0000, 0x4030, 0x0000, 0x0000, 0x0000, 0x4033, 
+0x0000, 0x0000, 0x0000, 0x4008, 0x0000, 0x0000, 0x0000, 0x4033, 0x0000, 
+0x0000, 0x0000, 0x4024, 0x0000, 0x0000, 0x0000, 0x4031, 0x0000, 0x0000, 
+0x0000, 0x402e, 0x0000, 0x0000, 0x0000, 0x4010, 0x0000, 0x0000, 0x0000, 
+0x4038, 0x0000, 0x0000, 0x0000, 0x4028, 0x0000, 0x0000, 0x0000, 0x402e, 
+0x0000, 0x0000, 0x0000, 0x4036, 0x0000, 0x0000, 0x0000, 0x4014, 0x0000, 
+0x0000, 0x0000, 0x4039, 0x0000, 0x0000, 0x0000, 0x402e, 0x0000, 0x0000, 
+0x0000, 0x4037, 0x0000, 0x0000, 0x0000, 0x4032, 0x0001, 0x0001, 0x0001, 
+0x0001, 0x0000, 0x0000, 0x0000, 0x0000, 0x0001, 0x0001, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0001, 0x0100, 0xa000, 0xebc8, 0xf385, 0xe1cc, 
+0x007f, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0100, 0x0200, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0200, 
+0x0000, 0x0000, 0xffff, 0xffff, 0xffff, 0xffff, 0x0100, 0x0000, 0xff00, 
+0x0000, 0x0100, 0x0002, 0x0000, 0x0001, 0x4d0d, 0x2053, 0x6153, 0x736e, 
+0x5320, 0x7265, 0x6669, 0x4244, 0x0001, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x0190, 0x0000, 0x0301, 0x0000, 0x0200, 0x0000, 0x0000, 0xffff, 0xffff, 
+0xffff, 0xffff, 0x0100, 0x0000, 0xff00, 0x0000, 0x0100, 0x0160, 0x0000, 
+0x0001, 0x4d0d, 0x2053, 0x6153, 0x736e, 0x5320, 0x7265, 0x6669, 0x4244, 
+0x0001, 0x0000, 0x0000, 0x0000, 0x0000, 0x0190, 0x0000, 0x0301, 0x0400, 
+0x0100, 0x0000, 0xff00, 0xffff, 0xffff, 0xffff, 0x00ff, 0x0001, 0x0000, 
+0x01f3, 0x0000, 0x0b01, 0x0000, 0x0100, 0x0d00, 0x534d, 0x5320, 0x6e61, 
+0x2073, 0x6553, 0x6972, 0x4466, 0x0142, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x9000, 0x0001, 0x0000, 0x1101, 0x0100, 0x0000, 0x0005, 0x0002, 0x0000, 
+0xffff, 0x00ff, 0x0000, 0x0000, 0x0100, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x0200, 0x0000, 0xff00, 0xffff, 0xffff, 0xffff, 0x00ff, 0x0001, 0x0000, 
+0x0017, 0x0000, 0x1001, 0x0000, 0x0100, 0x01d0, 0x0000, 0x4401, 0x0001, 
+0x0100, 0x0000, 0x0000, 0x0032, 0x0000, 0xff00, 0xffff, 0xffff, 0x00ff, 
+0x0200, 0x0000, 0x0000, 0x0000, 0x0000, 0x0100, 0x0001, 0x0003, 0x0001, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0001, 0x0000, 0x0000, 0x0000, 0xe000, 
+0x4060, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0001, 0xffff, 
+0xffff, 0xffff, 0xffff, 0x0100, 0x0000, 0x0f00, 0x0000, 0x0100, 0x0037, 
+0x0000, 0x3301, 0x0000, 0x0100, 0x000f, 0x0000, 0x0001, 0x0003, 0x0000, 
+0x0000, 0x0000, 0x0000, 0xf000, 0x013f, 0x0000, 0x0000, 0x0000, 0x4014, 
+0x0001, 0x0000, 0x0000, 0xf000, 0x013f, 0x0000, 0x0000, 0x0000, 0x4014, 
+0x0001, 0x0000, 0x0000, 0xf000, 0x013f, 0x0000, 0x0000, 0x0000, 0x3fe0, 
+0x0001, 0x0000, 0x0100, 0x0000, 0x0000, 0x0001, 0x0000, 0x0000, 0x0000, 
+0x3ff0, 0x0001, 0x0000, 0x0000, 0xf000, 0x003f, 0x0001, 0x0000, 0x0000, 
+0x0001, 0x0000, 0x0200, 0x0000, 0x0000, 0x0100, 0x0000, 0x0200, 0x0100, 
+0x2508, 0x2f6d, 0x6425, 0x252f, 0x0079, 0x0004, 0x0000, 0x0000, 0xf840, 
+0x40d8, 0x0d00, 0x534d, 0x5320, 0x6e61, 0x2073, 0x6553, 0x6972, 0x4466, 
+0x0142, 0x0000, 0x0000, 0x0000, 0x0000, 0x9000, 0x0001, 0x0100, 0x0000, 
+0x0001, 0x0000, 0x0000, 0x8000, 0x4046, 0x0003, 0x0001, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x500a, 0x706f, 0x6c75, 0x7461, 0x6f69, 
+0x006e, 0x0000, 0x0000, 0x2000, 0x0140, 0x0000, 0x0000, 0x0000, 0x4039, 
+0x0001, 0x0000, 0x0000, 0x2000, 0x0140, 0x0000, 0x0000, 0x0000, 0x403a, 
+0x0001, 0x0000, 0x0000, 0x0000, 0x0140, 0x0000, 0x0000, 0x0000, 0x3ff0, 
+0x0001, 0x0000, 0x0100, 0x0000, 0x0000, 0x0001, 0x0000, 0x0000, 0x0000, 
+0x4020, 0x0001, 0x0000, 0x0000, 0x0000, 0x0040, 0x0001, 0x0000, 0x0000, 
+0x0001, 0x0000, 0x0200, 0x0000, 0x0000, 0x0100, 0x0000, 0x0200, 0x0100, 
+0x0000, 0x0000, 0x8000, 0x4056, 0x0001, 0x4d0d, 0x2053, 0x6153, 0x736e, 
+0x5320, 0x7265, 0x6669, 0x4244, 0x0001, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x0190, 0x0000, 0x0001, 0x0200, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x0100, 0x0000, 0x0000, 0x0000, 0xa000, 0xebc8, 0xf385, 0xe1cc, 0x017f, 
+0xc8a0, 0x85eb, 0xccf3, 0x7fe1, 0xa001, 0xebc8, 0xf385, 0xe1cc, 0x017f, 
+0xc8a0, 0x85eb, 0xccf3, 0x7fe1, 0xa001, 0xebc8, 0xf385, 0xe1cc, 0x017f, 
+0xc8a0, 0x85eb, 0xccf3, 0x7fe1, 0x0001, 0x0000, 0x0100, 0x0000, 0x0000, 
+0x0001, 0x0002, 0x0000, 0x0000, 0x0001, 0x0000, 0x0002, 0x0001, 0x0000, 
+0x0000, 0x5680, 0x0140, 0x0d00, 0x534d, 0x5320, 0x6e61, 0x2073, 0x6553, 
+0x6972, 0x4466, 0x0142, 0x0000, 0x0000, 0x0000, 0x0000, 0x9000, 0x0001, 
+0x0100, 0x0000, 0x0001, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0001, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0200, 
+0x0000, 0x0500, 0x0000, 0x0000, 0x0100, 0x0000, 0x0100, 0x0000, 0x0100, 
+0x0000, 0x0100, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0100, 0x0000, 0x0100, 0x0101, 0x0500, 0x0000, 0x0000, 
+0x0100, 0x0000, 0x0100, 0x0000, 0x0100, 0x0000, 0x0100, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0100, 0x0000, 
+0x0100, 0x0201, 0x0100, 0x0001, 0x0000, 0x0100, 0x0000, 0x0000, 0x0000, 
+0x1400, 0x0040, 0x0000, 0x0000, 0x3400, 0x0040, 0x0101, 0x0000, 0x0100, 
+
+    0
+END
+
+IDD_WEATHEREDIT DLGINIT
+BEGIN
+    IDC_WEATHERGRAPH, 0x37a, 1666, 0
+0x0020, 0x0000, 0x0043, 0x006f, 0x0070, 0x0079, 0x0072, 0x0069, 0x0067, 
+0x0068, 0x0074, 0x0020, 0x0028, 0x0063, 0x0029, 0x0020, 0x0031, 0x0039, 
+0x0039, 0x0036, 0x0020, 0x004b, 0x004c, 0x0020, 0x0047, 0x0072, 0x006f, 
+0x0075, 0x0070, 0x0020, 0x0049, 0x006e, 0x0063, 0x002e, 0x0029, 0x0000, 
+0x0001, 0x0000, 0x0021, 0x0000, 0x0015, 0x0000, 0x0000, 0x0001, 0x8001, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0002, 0x8001, 0x0001, 0x0000, 
+0x0000, 0x0600, 0x0100, 0x0b00, 0x4c4b, 0x435f, 0x4148, 0x5452, 0x322e, 
+0xdc44, 0x0029, 0x6400, 0x0018, 0x0000, 0x0000, 0x0200, 0x0000, 0x0400, 
+0x0000, 0x0000, 0x0000, 0xfe00, 0xffff, 0x02ff, 0xff00, 0x0000, 0x0100, 
+0x0000, 0xff00, 0xffff, 0xffff, 0x0000, 0x0200, 0x0400, 0xff00, 0xff00, 
+0x0700, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0100, 0x0001, 0x0001, 
+0x0000, 0xfffe, 0xffff, 0x0002, 0xb4d2, 0x008c, 0x0001, 0x0000, 0xffff, 
+0xffff, 0xb4d2, 0x008c, 0x0002, 0x0003, 0xff00, 0x0000, 0x0007, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0101, 0x0200, 0x0000, 0xfe00, 0xffff, 
+0x02ff, 0x3200, 0x00ff, 0x0100, 0x0000, 0xff00, 0xffff, 0x32ff, 0x00ff, 
+0x0200, 0x0200, 0x0000, 0xcd00, 0x0700, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0100, 0x0001, 0x0003, 0x0000, 0xfffe, 0xffff, 0x0002, 0xd148, 
+0x00cc, 0x0001, 0x0000, 0xffff, 0xffff, 0xd148, 0x00cc, 0x0002, 0x0005, 
+0x00ff, 0x0000, 0x0007, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0101, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0100, 0x0000, 0x0001, 0xc8a0, 0x85eb, 
+0xccf3, 0x7fe1, 0x0004, 0x0000, 0x0005, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x3ff0, 0x0000, 0x0000, 0x0000, 0x4034, 0x0000, 0x0000, 0x0000, 0x4020, 
+0x0000, 0x0000, 0x0000, 0x4024, 0x0000, 0x0000, 0x0000, 0x4030, 0x0000, 
+0x0000, 0x0000, 0x4000, 0x0000, 0x0000, 0x0000, 0x4036, 0x0000, 0x0000, 
+0x0000, 0x4028, 0x0000, 0x0000, 0x0000, 0x4030, 0x0000, 0x0000, 0x0000, 
+0x4033, 0x0000, 0x0000, 0x0000, 0x4008, 0x0000, 0x0000, 0x0000, 0x4033, 
+0x0000, 0x0000, 0x0000, 0x4024, 0x0000, 0x0000, 0x0000, 0x4031, 0x0000, 
+0x0000, 0x0000, 0x402e, 0x0000, 0x0000, 0x0000, 0x4010, 0x0000, 0x0000, 
+0x0000, 0x4038, 0x0000, 0x0000, 0x0000, 0x4028, 0x0000, 0x0000, 0x0000, 
+0x402e, 0x0000, 0x0000, 0x0000, 0x4036, 0x0000, 0x0000, 0x0000, 0x4014, 
+0x0000, 0x0000, 0x0000, 0x4039, 0x0000, 0x0000, 0x0000, 0x402e, 0x0000, 
+0x0000, 0x0000, 0x4037, 0x0000, 0x0000, 0x0000, 0x4032, 0x0001, 0x0001, 
+0x0001, 0x0001, 0x0000, 0x0000, 0x0000, 0x0000, 0x0001, 0x0001, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0001, 0x0100, 0xa000, 0xebc8, 0xf385, 
+0xe1cc, 0x007f, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0100, 0x0200, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x0200, 0x0000, 0x0000, 0xffff, 0xffff, 0xffff, 0xffff, 0x0100, 0x0000, 
+0xca00, 0x0000, 0x0100, 0x0002, 0x0000, 0x0001, 0x4d0d, 0x2053, 0x6153, 
+0x736e, 0x5320, 0x7265, 0x6669, 0x4244, 0x0001, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0190, 0x0000, 0x0301, 0x0000, 0x0200, 0x0000, 0x0000, 0xffff, 
+0xffff, 0xffff, 0xffff, 0x0100, 0x0000, 0xca00, 0x0000, 0x0100, 0x00e8, 
+0x0000, 0x0001, 0x4d0d, 0x2053, 0x6153, 0x736e, 0x5320, 0x7265, 0x6669, 
+0x4244, 0x0001, 0x0000, 0x0000, 0x0000, 0x0000, 0x0190, 0x0000, 0x0301, 
+0x0000, 0x0200, 0x0000, 0xff00, 0xffff, 0xffff, 0xffff, 0x00ff, 0x0001, 
+0x0000, 0x018a, 0x0000, 0x7401, 0x0000, 0x0100, 0x0d00, 0x534d, 0x5320, 
+0x6e61, 0x2073, 0x6553, 0x6972, 0x4466, 0x0142, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x9000, 0x0001, 0x0000, 0x0101, 0x0100, 0x0000, 0x0002, 0x0002, 
+0x0000, 0xffff, 0x00ff, 0x0000, 0x0000, 0x0100, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0200, 0x0000, 0xff00, 0xffff, 0xffff, 0xffff, 0x00ff, 0x0001, 
+0x0000, 0x0012, 0x0000, 0x0b01, 0x0000, 0x0100, 0x0171, 0x0000, 0xd601, 
+0x0000, 0x0100, 0x0000, 0x0000, 0x0032, 0x0000, 0xff00, 0xffff, 0xffff, 
+0x00ff, 0x0200, 0x0000, 0x0000, 0x0000, 0x0000, 0x0100, 0x0001, 0x0003, 
+0x0001, 0x0000, 0x0000, 0x0000, 0x0000, 0x0001, 0x0000, 0x0000, 0x0000, 
+0xe000, 0x4060, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0001, 
+0xffff, 0xffff, 0xffff, 0xffff, 0x0100, 0x0000, 0x0f00, 0x0000, 0x0100, 
+0x001e, 0x0000, 0x1a01, 0x0000, 0x0100, 0x000d, 0x0000, 0x0001, 0x0003, 
+0x0000, 0x0000, 0x0000, 0x0000, 0xf000, 0x013f, 0x0000, 0x0000, 0x0000, 
+0x4014, 0x0001, 0x0000, 0x0000, 0xf000, 0x013f, 0x0000, 0x0000, 0x0000, 
+0x4014, 0x0001, 0x0000, 0x0000, 0xf000, 0x013f, 0x0000, 0x0000, 0x0000, 
+0x3fe0, 0x0001, 0x0000, 0x0100, 0x0000, 0x0000, 0x0001, 0x0000, 0x0000, 
+0x0000, 0x3ff0, 0x0001, 0x0000, 0x0000, 0x0000, 0x0000, 0x0004, 0x0000, 
+0x0000, 0x0001, 0x0000, 0x0201, 0x0000, 0x0000, 0x0100, 0x0000, 0x0200, 
+0x0100, 0x2508, 0x3a48, 0x4d25, 0x253a, 0x0153, 0x0001, 0x0000, 0x0000, 
+0xf840, 0x40d8, 0x0d00, 0x534d, 0x5320, 0x6e61, 0x2073, 0x6553, 0x6972, 
+0x4466, 0x0142, 0x0000, 0x0000, 0x0000, 0x0000, 0x9000, 0x0001, 0x0100, 
+0x0000, 0x0001, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0001, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x2000, 
+0x0140, 0x0000, 0x0000, 0x0000, 0x4039, 0x0001, 0x0000, 0x0000, 0x1400, 
+0x0140, 0x0000, 0x0000, 0x0000, 0x4039, 0x0001, 0x0000, 0x0000, 0x1400, 
+0x0140, 0x0000, 0x0000, 0x0000, 0x4004, 0x0001, 0x0000, 0x0100, 0x0000, 
+0x0000, 0x0001, 0x0000, 0x0000, 0x0000, 0x4014, 0x0001, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0004, 0x0000, 0x0000, 0x0001, 0x0000, 0x0201, 0x0000, 
+0x0000, 0x0100, 0x0000, 0x0200, 0x0100, 0x0000, 0x0000, 0x8000, 0x4056, 
+0x0001, 0x4d0d, 0x2053, 0x6153, 0x736e, 0x5320, 0x7265, 0x6669, 0x4244, 
+0x0001, 0x0000, 0x0000, 0x0000, 0x0000, 0x0190, 0x0000, 0x0001, 0x0100, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0100, 0x0000, 0x0000, 0x0000, 
+0xa000, 0xebc8, 0xf385, 0xe1cc, 0x017f, 0xc8a0, 0x85eb, 0xccf3, 0x7fe1, 
+0xa001, 0xebc8, 0xf385, 0xe1cc, 0x017f, 0xc8a0, 0x85eb, 0xccf3, 0x7fe1, 
+0xa001, 0xebc8, 0xf385, 0xe1cc, 0x017f, 0xc8a0, 0x85eb, 0xccf3, 0x7fe1, 
+0x0001, 0x0000, 0x0100, 0x0000, 0x0000, 0x0001, 0x0002, 0x0000, 0x0000, 
+0x0001, 0x0000, 0x0002, 0x0001, 0x0000, 0x0000, 0x5680, 0x0140, 0x0d00, 
+0x534d, 0x5320, 0x6e61, 0x2073, 0x6553, 0x6972, 0x4466, 0x0142, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x9000, 0x0001, 0x0100, 0x0000, 0x0001, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0001, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0200, 0x0000, 0x0500, 0x0000, 0x0000, 
+0x0100, 0x0000, 0x0100, 0x0000, 0x0100, 0x0000, 0x0100, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0100, 0x0000, 
+0x0000, 0x0101, 0x0500, 0x0000, 0x0000, 0x0100, 0x0000, 0x0100, 0x0000, 
+0x0100, 0x0000, 0x0100, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0100, 0x0000, 0x0000, 0x0201, 0x0100, 0x0001, 
+0x0000, 0x0100, 0x0000, 0x0000, 0x0000, 0x1400, 0x0040, 0x0000, 0x0000, 
+0x3400, 0x0040, 0x0101, 0x0100, 0x0100, 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+IDD_SIMULATION_BAR AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_PESTICIDE_PAGE AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_ABOUTBOX AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDR_MAINFRAME           "VarroaPop\n\nVarroa\nVarroa Files (*.vrp)\n.vrp\nVarroaPop.Document\nVarroa Document"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_APP_TITLE       "VarroaPop"
+    AFX_IDS_IDLEMESSAGE     "For Help, press F1"
+    AFX_IDS_HELPMODEMESSAGE "Select an object on which to get Help"
+END
+
+STRINGTABLE
+BEGIN
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_WEATHER    "Weather:                      "
+    IDS_VPVERSION           "VarroaPop Version 3.3.2.0 October 2019"
+    ID_INDICATOR_RES_FREQ   "Weekly"
+    ID_INDICATOR_SESSION    "Session:"
+END
+
+STRINGTABLE
+BEGIN
+    ID_FILE_NEW             "Create a new session\nNew"
+    ID_FILE_OPEN            "Open an existing session\nOpen"
+    ID_FILE_CLOSE           "Close the active session\nClose"
+    ID_FILE_SAVE            "Save the active session\nSave Session"
+    ID_FILE_SAVE_AS         "Save the active session with a new name\nSave As"
+    ID_FILE_PAGE_SETUP      "Change the printing options\nPage Setup"
+    ID_FILE_PRINT_SETUP     "Change the printer and printing options\nPrint Setup"
+    ID_FILE_PRINT           "Print the simulation results\nPrint"
+    ID_FILE_PRINT_PREVIEW   "Display full pages\nPrint Preview"
+END
+
+STRINGTABLE
+BEGIN
+    ID_APP_ABOUT            "Display program information, version number and copyright\nAbout"
+    ID_APP_EXIT             "Quit the application; prompts to save documents\nExit"
+    ID_HELP_INDEX           "Opens Help\nHelp Topics"
+    ID_HELP_FINDER          "List Help topics\nHelp Topics"
+    ID_HELP_USING           "Display instructions about how to use help\nHelp"
+    ID_CONTEXT_HELP         "Display help for clicked on buttons, menus and windows\nHelp"
+    ID_HELP                 "Display help for current task or command\nHelp"
+END
+
+STRINGTABLE
+BEGIN
+    ID_FILE_MRU_FILE1       "Open this document"
+    ID_FILE_MRU_FILE2       "Open this document"
+    ID_FILE_MRU_FILE3       "Open this document"
+    ID_FILE_MRU_FILE4       "Open this document"
+    ID_FILE_MRU_FILE5       "Open this document"
+    ID_FILE_MRU_FILE6       "Open this document"
+    ID_FILE_MRU_FILE7       "Open this document"
+    ID_FILE_MRU_FILE8       "Open this document"
+    ID_FILE_MRU_FILE9       "Open this document"
+    ID_FILE_MRU_FILE10      "Open this document"
+    ID_FILE_MRU_FILE11      "Open this document"
+    ID_FILE_MRU_FILE12      "Open this document"
+    ID_FILE_MRU_FILE13      "Open this document"
+    ID_FILE_MRU_FILE14      "Open this document"
+    ID_FILE_MRU_FILE15      "Open this document"
+    ID_FILE_MRU_FILE16      "Open this document"
+END
+
+STRINGTABLE
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane\nNext Pane"
+    ID_PREV_PANE            "Switch back to the previous window pane\nPrevious Pane"
+END
+
+STRINGTABLE
+BEGIN
+    ID_WINDOW_SPLIT         "Split the active window into panes\nSplit"
+END
+
+STRINGTABLE
+BEGIN
+    ID_EDIT_CLEAR           "Erase the selection\nErase"
+    ID_EDIT_CLEAR_ALL       "Erase everything\nErase All"
+    ID_EDIT_COPY            "Copy the selection and put it on the Clipboard\nCopy"
+    ID_EDIT_CUT             "Cut the selection and put it on the Clipboard\nCut"
+    ID_EDIT_FIND            "Find the specified text\nFind"
+    ID_EDIT_PASTE           "Insert Clipboard contents\nPaste"
+    ID_EDIT_REPEAT          "Repeat the last action\nRepeat"
+    ID_EDIT_REPLACE         "Replace specific text with different text\nReplace"
+    ID_EDIT_SELECT_ALL      "Select the entire document\nSelect All"
+    ID_EDIT_UNDO            "Undo the last action\nUndo"
+    ID_EDIT_REDO            "Redo the previously undone action\nRedo"
+END
+
+STRINGTABLE
+BEGIN
+    ID_VIEW_TOOLBAR         "Show or hide the toolbar\nToggle ToolBar"
+    ID_VIEW_STATUS_BAR      "Show or hide the status bar\nToggle StatusBar"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    AFX_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "Close print preview mode\nCancel Preview"
+END
+
+STRINGTABLE
+BEGIN
+    ID_CREATE_PROPSHEET     "Model Properties"
+    ID_SHOW_PROPSHEET       "Show the Model Initial Conditions\nInit Cond"
+    ID_VIEW_PARAMETERS      "Show or hide the Model Parameters\nToggle Model Parameters"
+    ID_SELECT_GRAPH         "Select Parameters to Graph\nSelect Graph"
+    ID_VIEW_PLOTDATA        "Select which simulation parameters to plot"
+    ID_FILE_SAVE_SESSION    "Save Session"
+    ID_FILE_SAVE_RESULTS    "Save Simulation Results"
+    IDR_PRINTER             "Print Chart to Printer"
+END
+
+STRINGTABLE
+BEGIN
+    IDR_FILE                "Save chart as .bmp file"
+    ID_VIEW_COMBREMOVALDATE "Configure Drone Comb Removal"
+    ID_VIEW_DATA_FREQ       "Toggle results frequency from this mode to the other (Daily/Weekly)"
+    ID_WEATHER_FILE_SAVEAS  "Save Weather File with Different Name\nSave As"
+    ID_WEATHER_FILE_EXIT    "Exit Weather Editor\nExit"
+    ID_VIEW_ZOOMIN          "View Narrower Date Range\nZoom In"
+    ID_VIEW_ZOOMOUT         "View Wider Date Range\nZoomOut"
+    ID_WEATHER_FILE_OPEN    "Open Existing Weather File\nOpen"
+    ID_WEATHER_FILE_SAVE    "Save Weather File\nSave"
+END
+
+STRINGTABLE
+BEGIN
+    ID_BUTTON32800          "Create New Weather File\nNew Weather"
+    ID_BUTTON32801          "Open Weather File\nOpen"
+    ID_BUTTON32802          "Save Weather File\nSave"
+    ID_BUTTON_COLEXPAND     "Increase Column Width\n Increase Column Width"
+    ID_BUTTON_COLREDUCE     "Reduce Column Width\n Reduce Column Width"
+END
+
+#endif    // English (United States) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif
+#include "res\VarroaPop.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#include "afxprint.rc"       // printing/print preview resources
+#endif
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

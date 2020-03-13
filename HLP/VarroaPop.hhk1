@@ -1,0 +1,167 @@
+<HTML>
+<!-- Sitemap 1.0 -->
+<OBJECT type="text/site properties">
+</OBJECT>
+<UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Keyword" value="Exit">
+		<param name="Name" value="File Exit command">
+		<param name="Local" value="html/afxc7d4k.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Keyword" value="Files">
+		<param name="Name" value="File menu commands">
+		<param name="Local" value="html/afxc0c4l.htm">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Keyword" value="Creating">
+			<param name="Local" value="html/afxc72d3.htm#hid_file_open">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Keyword" value="Managing">
+			<param name="Local" value="html/afxc0c4l.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Keyword" value="Opening">
+			<param name="Local" value="html/afxc72d3.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Keyword" value="Renaming before saving">
+			<param name="Local" value="html/afxc30hf.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Keyword" value="Saving Current">
+			<param name="Local" value="html/afxc9y05.htm">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Keyword" value="Getting Started">
+		<param name="Name" value="Getting Started">
+		<param name="Local" value="html/afxc1vvo.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Keyword" value="Immigration">
+		<param name="Name" value="Setting Up Immigrations">
+		<param name="Local" value="html/afxc9uwe.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Keyword" value="Initial Conditions">
+		<param name="Name" value="Setting Initial Conditions">
+		<param name="Local" value="html/afxc790z.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Keyword" value="Model Parameters">
+		<param name="Name" value="Setting Initial Conditions">
+		<param name="Local" value="html/afxc790z.htm">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Keyword" value="Actions">
+			<param name="Local" value="html/afxc5hbh.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Keyword" value="Colony Data">
+			<param name="Local" value="html/afxc8c8d.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Keyword" value="Weather Data Selection">
+			<param name="Local" value="html/afxc76y5.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Keyword" value="Weather File Editing/Creating">
+			<param name="Local" value="html/afxc9gvm.htm">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Keyword" value="Plotting">
+		<param name="Name" value="Selecting Data to Plot">
+		<param name="Local" value="html/afxc8iu9.htm">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Keyword" value="Selecting Parameters to Plot">
+			<param name="Local" value="html/afxc8iu9.htm">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Keyword" value="printing and print preview">
+		<param name="Name" value="File Print command">
+		<param name="Local" value="html/afxp225w.htm">
+		<param name="Name" value="File Print Preview command">
+		<param name="Local" value="html/afxp7q2f.htm">
+		<param name="Name" value="print preview toolbar">
+		<param name="Local" value="html/afxp3i9e.htm">
+		<param name="Name" value="File Print Setup command">
+		<param name="Local" value="html/afxp0434.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Keyword" value="Re-Queening">
+		<param name="Name" value="Re-Queening">
+		<param name="Local" value="html/afxc5hbh.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Keyword" value="Results">
+		<param name="See Also" value="Results">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Keyword" value="Saving">
+			<param name="Local" value="html/afxc7dnp.htm">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Keyword" value="Session">
+		<param name="Name" value="Creating Sessions">
+		<param name="Local" value="html/afxc961x.htm">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Keyword" value="Creating">
+			<param name="Local" value="html/afxc961x.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Keyword" value="Saving">
+			<param name="Local" value="html/afxc7dnp.htm">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Keyword" value="Simulation">
+		<param name="Name" value="Run a Simulation">
+		<param name="Local" value="html/afxc738u.htm">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Keyword" value="Running">
+			<param name="Local" value="html/afxc738u.htm">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Keyword" value="Status bar">
+		<param name="Name" value="View Status Bar Command">
+		<param name="Local" value="html/afxc6tv6.htm">
+		<param name="Name" value="Status bar">
+		<param name="Local" value="html/afxc72ya.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Keyword" value="Toolbar">
+		<param name="Name" value="Toolbar">
+		<param name="Local" value="html/afxc9jci.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Keyword" value="Varroa Treatment">
+		<param name="Name" value="Re-Queening">
+		<param name="Local" value="html/afxc5hbh.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Keyword" value="Weather Files">
+		<param name="Name" value="Creating Weather Files">
+		<param name="Local" value="html/afxc9gvm.htm">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Keyword" value="Creating">
+			<param name="Local" value="html/afxc9gvm.htm">
+			</OBJECT>
+	</UL>
+</UL></HTML>

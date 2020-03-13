@@ -1,0 +1,240 @@
+# Microsoft Developer Studio Generated Dependency File, included by VarroaPop.mak
+
+.\Adult.cpp : \
+	".\Adult.h"\
+	".\Bee.h"\
+	".\VarroaPop.h"\
+	
+
+.\Bee.cpp : \
+	".\Bee.h"\
+	".\VarroaPop.h"\
+	
+
+.\Brood.cpp : \
+	".\Bee.h"\
+	".\Brood.h"\
+	".\VarroaPop.h"\
+	
+
+.\Colony.cpp : \
+	".\Adult.h"\
+	".\Bee.h"\
+	".\Brood.h"\
+	".\Colony.h"\
+	".\Egg.h"\
+	".\Larva.h"\
+	".\Queen.h"\
+	".\VarroaPop.h"\
+	
+
+.\ColonyDataPage.cpp : \
+	".\Adult.h"\
+	".\Bee.h"\
+	".\Brood.h"\
+	".\Colony.h"\
+	".\ColonyDataPage.h"\
+	".\colonyselectionpage.h"\
+	".\Egg.h"\
+	".\Larva.h"\
+	".\MainFrm.h"\
+	".\MyPropSheet.h"\
+	".\Queen.h"\
+	".\SimulationPage.h"\
+	".\VarroaPop.h"\
+	".\VarroaPopDoc.h"\
+	".\VarroaPopView.h"\
+	".\WeatherEvents.h"\
+	".\WeatherPage.h"\
+	
+
+.\CreateWeatherHdr.cpp : \
+	".\CreateWeatherHdr.h"\
+	".\VarroaPop.h"\
+	".\WeatherEvents.h"\
+	
+
+.\Egg.cpp : \
+	".\Bee.h"\
+	".\Egg.h"\
+	".\VarroaPop.h"\
+	
+
+.\ImmigrationDlg.cpp : \
+	".\Adult.h"\
+	".\Bee.h"\
+	".\Brood.h"\
+	".\Colony.h"\
+	".\Egg.h"\
+	".\ImmigrationDlg.h"\
+	".\Larva.h"\
+	".\MyPropSheet.h"\
+	".\Queen.h"\
+	".\VarroaPop.h"\
+	".\VarroaPopDoc.h"\
+	".\WeatherEvents.h"\
+	
+
+.\Larva.cpp : \
+	".\Bee.h"\
+	".\Larva.h"\
+	".\VarroaPop.h"\
+	
+
+.\MainFrm.cpp : \
+	".\Adult.h"\
+	".\Bee.h"\
+	".\Brood.h"\
+	".\Colony.h"\
+	".\Egg.h"\
+	".\ImmigrationDlg.h"\
+	".\Larva.h"\
+	".\MainFrm.h"\
+	".\MyPropSheet.h"\
+	".\Queen.h"\
+	".\VarroaPop.h"\
+	".\VarroaPopDoc.h"\
+	".\WeatherEvents.h"\
+	
+
+.\MyPropSheet.cpp : \
+	".\Adult.h"\
+	".\Bee.h"\
+	".\Brood.h"\
+	".\Colony.h"\
+	".\Egg.h"\
+	".\Larva.h"\
+	".\MyPropSheet.h"\
+	".\Queen.h"\
+	".\VarroaPop.h"\
+	".\VarroaPopDoc.h"\
+	".\WeatherEvents.h"\
+	
+
+.\picclip.cpp : \
+	".\picclip.h"\
+	".\picture.h"\
+	
+
+.\picture.cpp : \
+	".\picture.h"\
+	
+
+.\Queen.cpp : \
+	".\Bee.h"\
+	".\Queen.h"\
+	".\VarroaPop.h"\
+	
+
+.\SimulationPage.cpp : \
+	".\SimulationPage.h"\
+	".\VarroaPop.h"\
+	
+
+.\StdAfx.cpp : \
+	"..\..\vc98\include\basetsd.h"\
+	".\StdAfx.h"\
+	
+
+.\VarroaPop.cpp : \
+	".\Adult.h"\
+	".\Bee.h"\
+	".\Brood.h"\
+	".\Colony.h"\
+	".\ColonyDataPage.h"\
+	".\colonyselectionpage.h"\
+	".\Egg.h"\
+	".\Larva.h"\
+	".\MainFrm.h"\
+	".\MyPropSheet.h"\
+	".\Queen.h"\
+	".\SimulationPage.h"\
+	".\VarroaPop.h"\
+	".\VarroaPopDoc.h"\
+	".\VarroaPopView.h"\
+	".\WeatherEvents.h"\
+	".\WeatherPage.h"\
+	
+
+!IF  "$(CFG)" == "VarroaPop - Win32 Release"
+
+!ELSEIF  "$(CFG)" == "VarroaPop - Win32 Debug"
+
+!ENDIF 
+
+.\VarroaPop.rc : \
+	".\Bee4.bmp"\
+	".\Graph1.bmp"\
+	".\Graph2.bmp"\
+	".\Graph3.bmp"\
+	".\res\Toolbar.bmp"\
+	".\res\VarroaPop.ico"\
+	".\res\VarroaPop.rc2"\
+	".\res\VarroaPopDoc.ico"\
+	".\varroapop1.bmp"\
+	
+
+.\VarroaPopDoc.cpp : \
+	".\Adult.h"\
+	".\Bee.h"\
+	".\Brood.h"\
+	".\Colony.h"\
+	".\ColonyDataPage.h"\
+	".\colonyselectionpage.h"\
+	".\Egg.h"\
+	".\Larva.h"\
+	".\MainFrm.h"\
+	".\MyPropSheet.h"\
+	".\Queen.h"\
+	".\SimulationPage.h"\
+	".\VarroaPop.h"\
+	".\VarroaPopDoc.h"\
+	".\VarroaPopView.h"\
+	".\WeatherEvents.h"\
+	".\WeatherPage.h"\
+	
+
+.\VarroaPopView.cpp : \
+	".\Adult.h"\
+	".\Bee.h"\
+	".\Brood.h"\
+	".\Colony.h"\
+	".\ColonyDataPage.h"\
+	".\colonyselectionpage.h"\
+	".\Egg.h"\
+	".\Larva.h"\
+	".\MyPropSheet.h"\
+	".\Queen.h"\
+	".\SimulationPage.h"\
+	".\VarroaPop.h"\
+	".\VarroaPopDoc.h"\
+	".\VarroaPopView.h"\
+	".\WeatherEvents.h"\
+	".\WeatherPage.h"\
+	
+
+.\WeatherEvents.cpp : \
+	".\CreateWeatherHdr.h"\
+	".\VarroaPop.h"\
+	".\WeatherEvents.h"\
+	
+
+.\WeatherPage.cpp : \
+	".\Adult.h"\
+	".\Bee.h"\
+	".\Brood.h"\
+	".\Colony.h"\
+	".\ColonyDataPage.h"\
+	".\colonyselectionpage.h"\
+	".\Egg.h"\
+	".\Larva.h"\
+	".\MainFrm.h"\
+	".\MyPropSheet.h"\
+	".\Queen.h"\
+	".\SimulationPage.h"\
+	".\VarroaPop.h"\
+	".\VarroaPopDoc.h"\
+	".\VarroaPopView.h"\
+	".\WeatherEvents.h"\
+	".\WeatherPage.h"\
+	

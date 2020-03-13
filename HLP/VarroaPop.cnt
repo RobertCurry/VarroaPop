@@ -1,0 +1,12 @@
+:Base VarroaPop.hlp
+1 Getting Started=getting_started
+1 How To...
+2 Create Session=howto_create
+2 Create A Weather File=howto_weather
+2 Set Up Immigration=HIDD_IMMIGRATION
+2 Run A Simulation=howto_simulation
+2 Save Results or a Session=howto_save
+1 Menus
+2 File menu=menu_file
+2 View menu=menu_view
+2 Help menu=menu_help

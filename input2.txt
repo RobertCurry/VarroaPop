@@ -1,0 +1,1 @@
+WeatherFileName=C:\My Projects\VarroaPop\Midwest5yraaaa.wth

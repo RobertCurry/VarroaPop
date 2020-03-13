@@ -1,0 +1,4 @@
+Command Argument for VP
+
+"D:\Libraries\Desktop\Puruker Files\comparison.vrp"   /i "D:\Libraries\Desktop\Puruker Files\input3.txt"
+

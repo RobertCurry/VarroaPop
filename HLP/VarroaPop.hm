@@ -1,0 +1,74 @@
+// MAKEHELP.BAT generated Help Map file.  Used by VARROAPOP.HPJ. 
+ 
+// Commands (ID_* and IDM_*) 
+HID_MOUSELABEL                          0x10066
+HID_CREATE_PROPSHEET                    0x18003
+HID_SHOW_PROPSHEET                      0x18004
+HID_VIEW_PARAMETERS                     0x18005
+HID_FILE_NEW_NEWSESSION                 0x18006
+HID_FILE_NEW_NEWCOLONY                  0x18007
+HID_SELECT_GRAPH                        0x18009
+HID_VIEW_PLOTDATA                       0x1800A
+HID_FILE_SAVE_SESSION                   0x1800B
+HID_FILE_SAVE_RESULTS                   0x1800D
+HID_VIEW_COMBREMOVALDATE                0x18011
+HID_VIEW_DATA_FREQ                      0x18012
+HID_VIEW_OPTIONS                        0x18013
+HID_WEATHER_CREATENEWWEATHERFILE        0x18014
+HID_WEATHER_EDITCURRENTWEATHERFILE      0x18015
+HID_WEATHER_EDITWEATHERFILEFROMDISK     0x18016
+HID_WEATHER_FILE_SAVEAS                 0x18019
+HID_WEATHER_FILE_EXIT                   0x1801A
+HID_VIEW_ZOOMIN                         0x1801B
+HID_VIEW_ZOOMOUT                        0x1801C
+HID_WEATHER_FILE_OPEN                   0x1801D
+HID_WEATHER_FILE_SAVE                   0x1801E
+HID_BUTTON32800                         0x18020
+HID_BUTTON32801                         0x18021
+HID_BUTTON32802                         0x18022
+HID_BUTTON32806                         0x18026
+HID_HELP_REPORTAPROBLEM                 0x18027
+HID_BUTTON32810                         0x1802A
+HID_BUTTON_COLEXPAND                    0x1802A
+HID_BUTTON32811                         0x1802B
+HID_BUTTON_COLREDUCE                    0x1802B
+HID_INDICATOR_WEATHER                   0x1E705
+HID_INDICATOR_RES_FREQ                  0x1E707
+HID_INDICATOR_SESSION                   0x1E708
+ 
+// Prompts (IDP_*) 
+ 
+// Resources (IDR_*) 
+HIDR_MAINFRAME                          0x20080
+HIDR_VARROATYPE                         0x20081
+HIDR_CHARTMENU                          0x200BB
+HIDR_MENUWEATHER                        0x200D2
+HIDR_PRINTER                            0x2800F
+HIDR_FILE                               0x28010
+ 
+// Dialogs (IDD_*) 
+HIDD_ABOUTBOX                           0x20064
+HIDD_VARROAPOP_FORM                     0x20065
+HIDD_COLONY_DATA_FORM                   0x20066
+HIDD_SIMULATION_FORM                    0x20067
+HIDD_ACTION_FORM                        0x2006B
+HIDD_CREATE_HEADER                      0x20086
+HIDD_SIMULATION_BAR                     0x20087
+HIDD_IMMIGRATION                        0x20093
+HIDD_GRAPHDIALOG                        0x200A8
+HIDD_SELECT_GRAPHS                      0x200AA
+HIDD_PROGRESS                           0x200AD
+HIDD_SPLASH                             0x200B5
+HIDD_OLECTRAGRAPHDLG                    0x200B9
+HIDD_REMOVECOMB                         0x200CB
+HIDD_OPTIONS                            0x200CC
+HIDD_WEATHEREDIT                        0x200D0
+HIDD_PROPPAGE_MEDIUM                    0x200E1
+HIDD_WEATHER_FORM1                      0x200E2
+HIDD_ACTION_FORM1                       0x200E3
+HIDD_SPAN_VALUE                         0x200E4
+HIDD_ACTION_FORM2                       0x200E5
+HIDD_PESTICIDE_PAGE                     0x200E6
+HIDD_PESTICIDE_ADD                      0x200E7
+ 
+// Frame Controls (IDW_*) 

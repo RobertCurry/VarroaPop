@@ -1,0 +1,36 @@
+// MAKEHELP.BAT generated Help Map file.  Used by VARROAPOP.HPJ. 
+ 
+// Commands (ID_* and IDM_*) 
+HID_CREATE_PROPSHEET                    0x18003
+HID_SHOW_PROPSHEET                      0x18004
+HID_VIEW_PARAMETERS                     0x18005
+HID_FILE_NEW_NEWSESSION                 0x18006
+HID_FILE_NEW_NEWCOLONY                  0x18007
+HID_SELECT_GRAPH                        0x18009
+HID_VIEW_PLOTDATA                       0x1800A
+HID_FILE_SAVE_SESSION                   0x1800B
+HID_FILE_SAVE_RESULTS                   0x1800D
+HID_INDICATOR_COLONY                    0x1E704
+HID_INDICATOR_WEATHER                   0x1E705
+ 
+// Prompts (IDP_*) 
+ 
+// Resources (IDR_*) 
+HIDR_MAINFRAME                          0x20080
+HIDR_VARROATYPE                         0x20081
+ 
+// Dialogs (IDD_*) 
+HIDD_ABOUTBOX                           0x20064
+HIDD_VARROAPOP_FORM                     0x20065
+HIDD_COLONY_DATA_FORM                   0x20066
+HIDD_SIMULATION_FORM                    0x20067
+HIDD_WEATHER_FORM                       0x2006A
+HIDD_COLONY_SELECTION_FORM              0x2006B
+HIDD_CREATE_HEADER                      0x20086
+HIDD_SIMULATION_BAR                     0x20087
+HIDD_IMMIGRATION                        0x20093
+HIDD_GRAPHDIALOG                        0x200A8
+HIDD_SELECT_GRAPHS                      0x200AA
+HIDD_PROGRESS                           0x200AD
+ 
+// Frame Controls (IDW_*) 

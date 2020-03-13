@@ -1,0 +1,8 @@
+Objectives of this build:
+
+Build 4.0.0.0
+
+
+
+
+This is the initial VarroaPop configuration under Git source control.  It is a copy from version 3.3.2.0
