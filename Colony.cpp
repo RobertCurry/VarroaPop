@@ -37,8 +37,8 @@ int CBeelist::GetQuantity()
 
 	POSITION pos = GetHeadPosition();
 
-	BOOL mt = IsEmpty();
-	int count = GetCount();
+	const BOOL mt = IsEmpty();
+	const int count = GetCount();
 
 	while (pos != NULL) 
 	{
@@ -88,7 +88,7 @@ void CBeelist::SetQuantityAt(int index, int Quan)
 int CBeelist::GetQuantityAt(int from, int to)
 {
 	int Count = 0;
-	int ListLength = GetCount();
+	const int ListLength = GetCount();
 
 	if ((from >= 0) && (from < ListLength))
 	{
@@ -105,9 +105,9 @@ int CBeelist::GetQuantityAt(int from, int to)
 void CBeelist::SetQuantityAt(int from, int to, int Quan)
 {
 	ASSERT(from <= to);
-	int ListLength = GetCount();
+	const int ListLength = GetCount();
 	if (to > ListLength - 1) to = ListLength - 1;
-	int QuanPerBoxcar = Quan/(1 + (to-from));  // divide by number of boxcars
+	const int QuanPerBoxcar = Quan/(1 + (to-from));  // divide by number of boxcars
 
 	if ((from >= 0) && (from <= to))
 	{
@@ -119,7 +119,7 @@ void CBeelist::SetQuantityAt(int from, int to, int Quan)
 void CBeelist::SetQuantityAtProportional(int from, int to, double Proportion)
 {
 	ASSERT(from <= to);
-	int ListLength = GetCount();
+	const int ListLength = GetCount();
 	if (to > ListLength - 1) to = ListLength - 1;
 
 	if ((from >= 0) && (from <= to))
@@ -327,7 +327,7 @@ void CForagerlist::Update(CAdult* theAdult, CEvent* theDay)
 	int NewForagerNumber = (int)(m_pColony->GetColonySize() * m_PropActualForagers) - GetActiveQuantity();
 	if (NewForagerNumber < 0) NewForagerNumber = 0;
 	if (NewForagerNumber > m_UnemployedForagers.GetNumber()) NewForagerNumber = m_UnemployedForagers.GetNumber(); //Limit to available potential foragers
-	int uf = m_UnemployedForagers.GetNumber() - NewForagerNumber;
+	const int uf = m_UnemployedForagers.GetNumber() - NewForagerNumber;
 	m_UnemployedForagers.SetNumber(uf);
 
 	if (m_UnemployedForagers.GetNumber() > 0)//test
@@ -666,7 +666,7 @@ void CAdultlist::Update(CBrood* theBrood, CColony* theColony, CEvent* theEvent, 
 		theAdult->SetLifespan(WADLLIFE);
 		delete theBrood;  // These brood are now  gone
 		AddHead(theAdult);
-		int count = GetCount();
+		const int count = GetCount();
 		if (GetCount() == m_ListLength+1) // All Boxcars are full - put workers in caboose, drones die off
 		{
 			Caboose = (CAdult*)RemoveTail();
@@ -726,7 +726,7 @@ void CAdultlist::UpdateLength(int len, bool bWorker)
 	if (bWorker)
 	{
 		CAdult* pAdult;
-		int count = GetCount();
+		const int count = GetCount();
 		if (len < GetCount())
 		{
 			int AdultsToForagers = 0;
@@ -736,7 +736,10 @@ void CAdultlist::UpdateLength(int len, bool bWorker)
 				AdultsToForagers+= pAdult->GetNumber();
 				delete pAdult;      
 			}
-			Caboose->number += AdultsToForagers;
+			if (Caboose != NULL) // just in case the reduction happens on the very first day of the simulation, Caboose not defined
+			{
+				Caboose->number += AdultsToForagers;
+			}
 		}
 		else if (len > GetCount()) //Add empty boxcars
 		{
@@ -758,7 +761,7 @@ int CAdultlist::MoveToEnd(int QuantityToMove, int MinAge)
 	if ((MinAge < 0) || (QuantityToMove <= 0)) return 0;  
 	int TotalMoved = 0;
 	int CurrentlyMoving = 0;
-	int EndIndex = GetLength() - 1;  // The last boxcar in the list
+	const int EndIndex = GetLength() - 1;  // The last boxcar in the list
 	int index = GetLength() - 2; // Initially points to first boxcar to move - the one just before the last one
 	if (QuantityToMove > 0)
 	{
@@ -911,10 +914,10 @@ double CBroodlist::GetMitesPerCell()
 void CBroodlist::DistributeMites(CMite theMites)
 {
 	// Scan thru all the brood boxcars and set mite number
-	int Len = GetLength();
+	const int Len = GetLength();
 	if (Len <= 0) return;
-	int MitesPerBoxcar = theMites.GetTotal()/Len;
-	double PercentRes = theMites.GetPctResistant();
+	const int MitesPerBoxcar = theMites.GetTotal()/Len;
+	const double PercentRes = theMites.GetPctResistant();
 	POSITION pos;
 	CBrood* pBrood;
 	pos = GetHeadPosition();
@@ -1290,9 +1293,9 @@ void CColony::Serialize(CArchive& ar, int FileFormatVersion)
 
 			// Store some integers, some doubles, and dates as place holders
 			// As we need to store/retrieve new actual variables, reduce these placeholders appropriately
-			int iTemp = 0;
-			double dTemp = 0.0;
-			COleDateTime dateTemp = COleDateTime(2001,9,11,0,0,0);
+			const int iTemp = 0;
+			const double dTemp = 0.0;
+			const COleDateTime dateTemp = COleDateTime(2001,9,11,0,0,0);
 			int i = 0;
 			for (i=0;i<8;i++) ar << iTemp;
 			for (i=0;i<8;i++) ar << dTemp;
@@ -1442,7 +1445,7 @@ COleDateTime* CColony::GetDayNumDate(int DayNum)
 {
 	COleDateTime temptime;
 	COleDateTime* pReturnDate = NULL;
-	COleDateTimeSpan ts(DayNum -1,0,0,0); // First day is 0 span
+	const COleDateTimeSpan ts(DayNum -1,0,0,0); // First day is 0 span
 	if( temptime.ParseDateTime(m_InitCond.m_SimStart) )
 	//if( temptime.ParseDateTime(Get) )
 	{
@@ -1711,7 +1714,7 @@ int CColony::GetColonySize()
 void CColony::UpdateBees(CEvent* pEvent, int DayNum)
 {
 
-	float LarvPerBee = float(Wlarv.GetQuantity() + Dlarv.GetQuantity())/
+	const float LarvPerBee = float(Wlarv.GetQuantity() + Dlarv.GetQuantity())/
 					(Wadl.GetQuantity() + Dadl.GetQuantity() + foragers.GetQuantity());
 	///////////////////////////////////////////////////////////////////////////////////////////////////
 	// Apply Date Range values
@@ -1823,7 +1826,7 @@ void CColony::UpdateBees(CEvent* pEvent, int DayNum)
 	Wlarv.Update((CEgg*)Weggs.GetCaboose());
 	CapDrn.Update((CLarva*)Dlarv.GetCaboose());
 	CapWkr.Update((CLarva*)Wlarv.GetCaboose());
-	int NumberOfNonAdults = Wlarv.GetQuantity() +  Dlarv.GetQuantity() + CapDrn.GetQuantity() + CapWkr.GetQuantity();
+	const int NumberOfNonAdults = Wlarv.GetQuantity() +  Dlarv.GetQuantity() + CapDrn.GetQuantity() + CapWkr.GetQuantity();
 	if ((NumberOfNonAdults > 0) || (pEvent->IsForageDay()))
 	{
 		// Foragers killed due to pesticide.  Recruit precocious Adult Workers to be foragers - Add them to the last Adult Boxcar
@@ -1832,7 +1835,7 @@ void CColony::UpdateBees(CEvent* pEvent, int DayNum)
 		//
 		int ForagersToBeKilled = QuantityPesticideToKill(&foragers,m_EPAData.m_D_C_Foragers,0,m_EPAData.m_AI_AdultLD50_Contact,m_EPAData.m_AI_AdultSlope_Contact); //Contact Mortality
 		ForagersToBeKilled +=    QuantityPesticideToKill(&foragers, m_EPAData.m_D_D_Foragers, 0, m_EPAData.m_AI_AdultLD50, m_EPAData.m_AI_AdultSlope); //Diet Mortality
-		int MinAgeToForager = 14;
+		const int MinAgeToForager = 14;
 		Wadl.MoveToEnd(ForagersToBeKilled, MinAgeToForager);
 		if (ForagersToBeKilled > 0)
 		{
@@ -1928,11 +1931,11 @@ void CColony::UpdateMites(CEvent* pEvent, int DayNum)
 
 	//  Calculate proportion of RunMites that can invade cells (per Calis)
 	double I;
-	double B = GetColonySize()*0.125; // Weight in grams of colony
+	const double B = GetColonySize()*0.125; // Weight in grams of colony
 	if (B > 0.0)
 	{
-		double rD = 6.49*DrnBrood->GetNumber()/B;
-		double rW = 0.56*WkrBrood->GetNumber()/B;
+		const double rD = 6.49*DrnBrood->GetNumber()/B;
+		const double rW = 0.56*WkrBrood->GetNumber()/B;
 		I = (1-exp(-(rD+rW)));
 		if (I<0.0)	I = 0.0;
 	}
@@ -1974,7 +1977,7 @@ void CColony::UpdateMites(CEvent* pEvent, int DayNum)
 	//  Determine if too many mites/worker cell.  If so, limit
 	if (WMites.GetTotal() > MAXMITES_PER_WORKER_CELL*WkrBrood->GetNumber()) 
 	{
-		double pr = WMites.GetPctResistant();
+		const double pr = WMites.GetPctResistant();
 		WMites = MAXMITES_PER_WORKER_CELL*WkrBrood->GetNumber();
 		WMites.SetPctResistant(pr);
 	}
@@ -2020,8 +2023,8 @@ void CColony::UpdateMites(CEvent* pEvent, int DayNum)
 	else MitesPerCellD = (double)DrnEmerge.m_Mites.GetTotal()/DrnEmerge.GetNumber();
 
 	// Calculate survivorship
-	double PropSurviveMiteW = m_InitCond.m_workerMiteSurvivorship/100;  
-	double PropSurviveMiteD = m_InitCond.m_droneMiteSurvivorshipField/100;  
+	const double PropSurviveMiteW = m_InitCond.m_workerMiteSurvivorship/100;  
+	const double PropSurviveMiteD = m_InitCond.m_droneMiteSurvivorshipField/100;  
 	
 	// Calculate reproduction rates per mite per cell
 	double ReproMitePerCellD;
@@ -2047,7 +2050,7 @@ void CColony::UpdateMites(CEvent* pEvent, int DayNum)
 	CMite SurviveMitesW = WkrEmerge.m_Mites * PropSurviveMiteW;
 	CMite SurviveMitesD = DrnEmerge.m_Mites * PropSurviveMiteD;
 
-	int NumEmergingMites = SurviveMitesW.GetTotal() + SurviveMitesD.GetTotal();
+	const int NumEmergingMites = SurviveMitesW.GetTotal() + SurviveMitesD.GetTotal();
 	
 	CMite NewMitesW = SurviveMitesW * ReproMitePerCellW;
 	CMite NewMitesD = SurviveMitesD * ReproMitePerCellD;
@@ -2055,7 +2058,7 @@ void CColony::UpdateMites(CEvent* pEvent, int DayNum)
 	SurviveMitesW = SurviveMitesW * WkrEmerge.m_PropVirgins;
 	SurviveMitesD = SurviveMitesD * DrnEmerge.m_PropVirgins;
 
-	int NumVirgins = SurviveMitesW.GetTotal() + SurviveMitesD.GetTotal();
+	const int NumVirgins = SurviveMitesW.GetTotal() + SurviveMitesD.GetTotal();
 
 	m_MitesDyingToday = int(NumEmergingMites - NumVirgins + NumVirgins*(1-PROPRUNMITE2));
 	m_MitesDyingToday = (m_MitesDyingToday >= 0) ? m_MitesDyingToday : 0; // Constrain positive 
@@ -2080,7 +2083,7 @@ void CColony::UpdateMites(CEvent* pEvent, int DayNum)
 		COleDateTime* theDate = GetDayNumDate(DayNum);
 		if (m_MiteTreatmentInfo.GetActiveItem(*theDate,theItem))
 		{
-			int Quan = RunMite.GetTotal();
+			const int Quan = RunMite.GetTotal();
 			RunMite.SetNonResistant(int(double(RunMite.GetNonResistant())*
 												(100.0 - theItem.PctMortality)/100.0));
 			m_MitesDyingToday += (Quan - RunMite.GetTotal());
@@ -2315,8 +2318,8 @@ void CColony::DoPendingEvents(CEvent* pWeatherEvent, int CurrentSimDay)
 	{
 		//TRACE("A Discrete Event on %s\n",pWeatherEvent->GetDateStg("%m/%d/%Y"));
 		MyMessageBox("Looking For a Discrete Event\n");
-		int EggLayDelay = 17;
-		int Strength = 5;
+		const int EggLayDelay = 17;
+		const int Strength = 5;
 
 		switch(pEventArray->GetAt(i))
 		{
@@ -2370,7 +2373,7 @@ int CColony::GetMitesDyingToday()
 int CColony::GetNurseBees()
 // Number of nurse bees is defined as # larvae/2.  Implication is that a nurse bee is needed for each two larvae
 {
-	int TotalLarvae = Wlarv.GetQuantity() + Dlarv.GetQuantity();
+	const int TotalLarvae = Wlarv.GetQuantity() + Dlarv.GetQuantity();
 	return TotalLarvae/2;
 }
 
@@ -2505,8 +2508,8 @@ int CColony::QuantityPesticideToKill(CBeelist* pList, double CurrentDose, double
 		int BeeQuant;
 		int NewBeeQuant;
 		BeeQuant = pList->GetQuantity();
-		double reduxcurrent = m_EPAData.DoseResponse(CurrentDose, LD50, Slope);
-		double reduxmax = m_EPAData.DoseResponse(MaxDose, LD50, Slope);
+		const double reduxcurrent = m_EPAData.DoseResponse(CurrentDose, LD50, Slope);
+		const double reduxmax = m_EPAData.DoseResponse(MaxDose, LD50, Slope);
 		if (reduxcurrent <= reduxmax) return 0;  // Less than max already seen
 		NewBeeQuant = (int)(BeeQuant * ( 1 - (reduxcurrent - reduxmax)));
 		//pList->SetQuantityAt(from,to,NewBeeQuant);
@@ -2521,11 +2524,11 @@ int CColony::ApplyPesticideToBees(CBeelist* pList, int from, int to, double Curr
 		int NewBeeQuant;
 		BeeQuant = pList->GetQuantityAt(from,to);
 		if (BeeQuant <= 0) return 0;
-		double reduxcurrent = m_EPAData.DoseResponse(CurrentDose, LD50, Slope);
-		double reduxmax = m_EPAData.DoseResponse(MaxDose, LD50, Slope);
+		const double reduxcurrent = m_EPAData.DoseResponse(CurrentDose, LD50, Slope);
+		const double reduxmax = m_EPAData.DoseResponse(MaxDose, LD50, Slope);
 		if (reduxcurrent <= reduxmax) return 0;  // Less than max already seen
 		NewBeeQuant = (int)(BeeQuant * ( 1 - (reduxcurrent - reduxmax)));
-		double PropRedux = (double)NewBeeQuant/(double)BeeQuant;
+		const double PropRedux = (double)NewBeeQuant/(double)BeeQuant;
 		//pList->SetQuantityAt(from,to,NewBeeQuant);
 		pList->SetQuantityAtProportional(from,to,PropRedux);
 		return BeeQuant - NewBeeQuant;  // This is the number killed by pesticide
@@ -2544,13 +2547,13 @@ void CColony::DetermineFoliarDose(int DayNum)
 	if (!m_EPAData.m_FoliarEnabled) return;
 
 	COleDateTime* pDate = GetDayNumDate(DayNum);
-	COleDateTime CurDate(pDate->GetYear(), pDate->GetMonth(), pDate->GetDay(), 0,0,0);
+	const COleDateTime CurDate(pDate->GetYear(), pDate->GetMonth(), pDate->GetDay(), 0,0,0);
 	delete pDate;
 	
 	// In order to expose, must be after the application date and inside the forage window
 	if ((CurDate >= m_EPAData.m_FoliarAppDate) && (CurDate >= m_EPAData.m_FoliarForageBegin) && (CurDate < m_EPAData.m_FoliarForageEnd))
 	{
-		LONG DaysSinceApplication = (CurDate - m_EPAData.m_FoliarAppDate).GetDays();
+		const LONG DaysSinceApplication = (CurDate - m_EPAData.m_FoliarAppDate).GetDays();
 
 		// Foliar Dose is related to AI application rate and Contact Exposure factor (See
 		// Kris Garber's EFED Training Insect Exposure.pptx for a summary); 
@@ -2561,7 +2564,7 @@ void CColony::DetermineFoliarDose(int DayNum)
 		// Dose reduced due to active ingredient half-life
 		if (m_EPAData.m_AI_HalfLife > 0)
 		{
-			double k = log(2.0)/m_EPAData.m_AI_HalfLife;
+			const double k = log(2.0)/m_EPAData.m_AI_HalfLife;
 			Dose *= exp(-k*DaysSinceApplication);
 		}
 		m_EPAData.m_D_C_Foragers += Dose;  // Adds to any diet-based exposure.  Only foragers impacted.
@@ -2739,8 +2742,8 @@ void CColony::AddPollenToResources(SResourceItem theResource)
 		MyMessageBox("Maximum Colony Pollen is <= 0.  Forcing to 5000g");
 		m_ColonyPolMaxAmount = 5000;
 	}
-	double PropFull = m_Resources.GetPollenQuantity()/m_ColonyPolMaxAmount;
-	double Reduction = 1 - m_Resources.GetPollenQuantity()/m_ColonyPolMaxAmount;
+	const double PropFull = m_Resources.GetPollenQuantity()/m_ColonyPolMaxAmount;
+	const double Reduction = 1 - m_Resources.GetPollenQuantity()/m_ColonyPolMaxAmount;
 	if (PropFull > 0.9)
 	{
 		theResource.m_ResourseQuantity *= Reduction;
@@ -2758,7 +2761,7 @@ void CColony::AddNectarToResources(SResourceItem theResource)
 		MyMessageBox("Maximum Colony Nectar is <= 0.  Forcing to 5000g");
 		m_ColonyNecMaxAmount = 5000;
 	}
-	double PropFull = m_Resources.GetNectarQuantity()/m_ColonyNecMaxAmount;
+	const double PropFull = m_Resources.GetNectarQuantity()/m_ColonyNecMaxAmount;
 
 	double Reduction = 1 - m_Resources.GetNectarQuantity()/m_ColonyNecMaxAmount;
 	if (Reduction < 0)
@@ -2791,8 +2794,8 @@ bool CColony::IsPollenFeedingDay(CEvent* pEvent)
 	{
 		if (m_SuppPollenAnnual)
 		{
-			COleDateTime TestBeginTime(pEvent->GetTime().GetYear(), m_SuppPollen.m_BeginDate.GetMonth(), m_SuppPollen.m_BeginDate.GetDay(),0,0,0);
-			COleDateTime TestEndTime(pEvent->GetTime().GetYear(), m_SuppPollen.m_EndDate.GetMonth(), m_SuppPollen.m_EndDate.GetDay(),0,0,0);
+			const COleDateTime TestBeginTime(pEvent->GetTime().GetYear(), m_SuppPollen.m_BeginDate.GetMonth(), m_SuppPollen.m_BeginDate.GetDay(),0,0,0);
+			const COleDateTime TestEndTime(pEvent->GetTime().GetYear(), m_SuppPollen.m_EndDate.GetMonth(), m_SuppPollen.m_EndDate.GetDay(),0,0,0);
 
 			FeedingDay = ((m_SuppPollen.m_CurrentAmount > 0.0) &&
 				(TestBeginTime < pEvent->GetTime()) &&
@@ -2816,8 +2819,8 @@ bool CColony::IsNectarFeedingDay(CEvent* pEvent)
 	{
 		if (m_SuppNectarAnnual)
 		{
-			COleDateTime TestBeginTime(pEvent->GetTime().GetYear(), m_SuppNectar.m_BeginDate.GetMonth(), m_SuppNectar.m_BeginDate.GetDay(),0,0,0);
-			COleDateTime TestEndTime(pEvent->GetTime().GetYear(), m_SuppNectar.m_EndDate.GetMonth(), m_SuppNectar.m_EndDate.GetDay(),0,0,0);
+			const COleDateTime TestBeginTime(pEvent->GetTime().GetYear(), m_SuppNectar.m_BeginDate.GetMonth(), m_SuppNectar.m_BeginDate.GetDay(),0,0,0);
+			const COleDateTime TestEndTime(pEvent->GetTime().GetYear(), m_SuppNectar.m_EndDate.GetMonth(), m_SuppNectar.m_EndDate.GetDay(),0,0,0);
 
 			FeedingDay = ((m_SuppNectar.m_CurrentAmount > 0.0) &&
 				(TestBeginTime < pEvent->GetTime()) &&
@@ -2864,7 +2867,7 @@ double CColony::GetPollenNeeds(CEvent* pEvent)
 		Consumption[1] = m_EPAData.m_C_A410_Pollen/1000.0;
 		Consumption[2] = m_EPAData.m_C_A1120_Pollen/1000.0;
 
-		int NurseBeeQuantity = GetNurseBees();
+		const int NurseBeeQuantity = GetNurseBees();
 		int MovedNurseBees = 0;
 
 		for (int i = 0; i < 3; i++)
@@ -2884,7 +2887,7 @@ double CColony::GetPollenNeeds(CEvent* pEvent)
 				break;  // All nurse bees accounted for.
 			}
 		}
-		int NonNurseBees = GetColonySize() - MovedNurseBees;
+		const int NonNurseBees = GetColonySize() - MovedNurseBees;
 		Need += NonNurseBees*.002;  // 2 mg per day consumption for non nurse bees
 
 		// Add Forager need
@@ -2903,7 +2906,7 @@ double CColony::GetPollenNeeds(CEvent* pEvent)
 	else // non-winter day
 	{
 		// Larvae needs
-		double LNeeds = Wlarv.GetQuantityAt(3)*m_EPAData.m_C_L4_Pollen + Wlarv.GetQuantityAt(4)*m_EPAData.m_C_L5_Pollen + 
+		const double LNeeds = Wlarv.GetQuantityAt(3)*m_EPAData.m_C_L4_Pollen + Wlarv.GetQuantityAt(4)*m_EPAData.m_C_L5_Pollen + 
 			Dlarv.GetQuantity()*m_EPAData.m_C_LD_Pollen;
 
 		// Adult needs
@@ -2950,7 +2953,7 @@ double CColony::GetNectarNeeds(CEvent* pEvent)
 			{
 				if (pEvent->IsForageDay())  // In this case, foragers need normal forager nutrition
 				{
-					double NonForagers = GetColonySize() - foragers.GetActiveQuantity();
+					const double NonForagers = GetColonySize() - foragers.GetActiveQuantity();
 					Need = (foragers.GetActiveQuantity()*m_EPAData.m_C_Forager_Nectar)/1000 + 0.05419*NonForagers*pow(0.128*NonForagers, -0.27); //grams
 				}
 				else  // Otherwise, all bees consume at winter rates
@@ -2964,7 +2967,7 @@ double CColony::GetNectarNeeds(CEvent* pEvent)
 	{
 
 		// Larvae needs
-		double LNeeds = Wlarv.GetQuantityAt(3)*m_EPAData.m_C_L4_Nectar + Wlarv.GetQuantityAt(4)*m_EPAData.m_C_L5_Nectar +
+		const double LNeeds = Wlarv.GetQuantityAt(3)*m_EPAData.m_C_L4_Nectar + Wlarv.GetQuantityAt(4)*m_EPAData.m_C_L5_Nectar +
 			Dlarv.GetQuantity()*m_EPAData.m_C_LD_Nectar;
 
 		// Adult needs
@@ -3024,7 +3027,7 @@ double CColony::GetIncomingNectarPesticideConcentration(int DayNum)
 {
 	double IncomingConcentration = 0;
 	COleDateTime* pDate = GetDayNumDate(DayNum);
-	COleDateTime CurDate(pDate->GetYear(), pDate->GetMonth(), pDate->GetDay(), 0,0,0);
+	const COleDateTime CurDate(pDate->GetYear(), pDate->GetMonth(), pDate->GetDay(), 0,0,0);
 	delete pDate;
 
 	// Check to see if we're using only pesticide concentration table
@@ -3048,10 +3051,10 @@ double CColony::GetIncomingNectarPesticideConcentration(int DayNum)
 		{
 			IncomingConcentration = 110.0 * m_EPAData.m_E_AppRate/1000000.0;  // Incoming AI Grams/Grams Nectar due to foliar spray
 			// Dose reduced due to active ingredient half-life
-			LONG DaysSinceApplication = (CurDate - m_EPAData.m_FoliarAppDate).GetDays();
+			const LONG DaysSinceApplication = (CurDate - m_EPAData.m_FoliarAppDate).GetDays();
 			if (m_EPAData.m_AI_HalfLife > 0)
 			{
-				double k = log(2.0)/m_EPAData.m_AI_HalfLife;
+				const double k = log(2.0)/m_EPAData.m_AI_HalfLife;
 				IncomingConcentration *= exp(-k*DaysSinceApplication);
 			}
 			//TRACE("Incoming Foliar Spray Nectar Pesticide on %s\n",CurDate.Format("%m/%d/%Y"));
@@ -3067,9 +3070,9 @@ double CColony::GetIncomingNectarPesticideConcentration(int DayNum)
 		{
 			if ((m_EPAData.m_AI_KOW > 0) || (m_EPAData.m_E_SoilTheta != 0)) // Ensure no NAN exceptions
 			{
-				double LogKOW = log10(m_EPAData.m_AI_KOW);
-				double TSCF = -0.0648*(LogKOW*LogKOW) + 0.241*LogKOW + 0.5822;
-				double SoilConc = TSCF * (pow(10,(0.95*LogKOW -2.05)) + 0.82) *
+				const double LogKOW = log10(m_EPAData.m_AI_KOW);
+				const double TSCF = -0.0648*(LogKOW*LogKOW) + 0.241*LogKOW + 0.5822;
+				const double SoilConc = TSCF * (pow(10,(0.95*LogKOW -2.05)) + 0.82) *
 					m_EPAData.m_E_SoilConcentration*(m_EPAData.m_E_SoilP/(m_EPAData.m_E_SoilTheta + m_EPAData.m_E_SoilP*m_EPAData.m_AI_KOC*m_EPAData.m_E_SoilFoc));
 //					m_EPAData.m_E_SoilConcentration*((m_EPAData.m_E_SoilP/m_EPAData.m_E_SoilTheta) + m_EPAData.m_E_SoilP*m_EPAData.m_AI_KOC*m_EPAData.m_E_SoilFoc);
 				IncomingConcentration += SoilConc/1000000; // Add Grams AI/Gram Nectar for soil concentration
@@ -3088,7 +3091,7 @@ double CColony::GetIncomingPollenPesticideConcentration(int DayNum)
 
 	double IncomingConcentration = 0;
 	COleDateTime* pDate = GetDayNumDate(DayNum);
-	COleDateTime CurDate(pDate->GetYear(), pDate->GetMonth(), pDate->GetDay(), 0,0,0);
+	const COleDateTime CurDate(pDate->GetYear(), pDate->GetMonth(), pDate->GetDay(), 0,0,0);
 	delete pDate;
 	// Check to see if we're using only pesticide concentration table
 	// If so, query this date and set Nectar pesticide concentration as indicated in the file
@@ -3107,10 +3110,10 @@ double CColony::GetIncomingPollenPesticideConcentration(int DayNum)
 		{
 			IncomingConcentration = 110.0 * m_EPAData.m_E_AppRate/1000000;  // Incoming AI Grams/Grams Pollen due to foliar spray (uG/G = 110  * lbs/AC)
 			// Dose reduced due to active ingredient half-life
-			LONG DaysSinceApplication = (CurDate - m_EPAData.m_FoliarAppDate).GetDays();
+			const LONG DaysSinceApplication = (CurDate - m_EPAData.m_FoliarAppDate).GetDays();
 			if (m_EPAData.m_AI_HalfLife > 0)
 			{
-				double k = log(2.0)/m_EPAData.m_AI_HalfLife;
+				const double k = log(2.0)/m_EPAData.m_AI_HalfLife;
 				IncomingConcentration *= exp(-k*DaysSinceApplication);
 			}
 			//TRACE("Incoming Foliar Spray Pollen Pesticide on %s\n",CurDate.Format("%m/%d/%Y"));
@@ -3127,9 +3130,9 @@ double CColony::GetIncomingPollenPesticideConcentration(int DayNum)
 		{
 			if ((m_EPAData.m_AI_KOW > 0) || (m_EPAData.m_E_SoilTheta != 0)) // Ensure no NAN exceptions
 			{
-				double LogKOW = log10(m_EPAData.m_AI_KOW);
-				double TSCF = -0.0648*(LogKOW*LogKOW) + 0.241*LogKOW + 0.5822;
-				double SoilConc = TSCF * (pow(10,(0.95*LogKOW -2.05)) + 0.82) *
+				const double LogKOW = log10(m_EPAData.m_AI_KOW);
+				const double TSCF = -0.0648*(LogKOW*LogKOW) + 0.241*LogKOW + 0.5822;
+				const double SoilConc = TSCF * (pow(10,(0.95*LogKOW -2.05)) + 0.82) *
 					m_EPAData.m_E_SoilConcentration*(m_EPAData.m_E_SoilP/(m_EPAData.m_E_SoilTheta + m_EPAData.m_E_SoilP*m_EPAData.m_AI_KOC*m_EPAData.m_E_SoilFoc));
 //					m_EPAData.m_E_SoilConcentration*((m_EPAData.m_E_SoilP/m_EPAData.m_E_SoilTheta) + m_EPAData.m_E_SoilP*m_EPAData.m_AI_KOC*m_EPAData.m_E_SoilFoc);
 				IncomingConcentration += SoilConc/1000000;  // Add Grams AI/Grams Pollen
